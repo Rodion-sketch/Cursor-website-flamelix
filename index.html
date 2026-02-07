@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flamelix — Marketing & IT Team for Real Estate Developers</title>
+    <meta name="description" content="Flamelix helps real estate developers achieve sales targets by building data-driven marketing systems. Research, strategy, lead generation, CRM, analytics.">
+    <meta name="keywords" content="real estate marketing, lead generation, CRM, analytics, digital marketing, IT, developer marketing">
+    <meta name="author" content="Flamelix">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Flamelix — Marketing & IT Team for Real Estate Developers">
+    <meta property="og:description" content="We help achieve sales targets by building data-driven marketing systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://flamelix.com">
+    <meta property="og:image" content="https://flamelix.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="logo.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Flamelix",
+        "url": "https://flamelix.com",
+        "logo": "https://flamelix.com/logo.svg",
+        "description": "Marketing & IT Team for Real Estate Developers",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+7-903-231-7693",
+            "contactType": "sales",
+            "availableLanguage": ["English", "Russian"]
+        },
+        "sameAs": [
+            "https://t.me/rodionbat"
+        ]
+    }
+    </script>
+
+    <!-- Noscript fallback -->
+    <noscript>
+        <style>
+            [data-aos] { opacity: 1 !important; transform: none !important; }
+            #particleCanvas { display: none; }
+        </style>
+    </noscript>
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="logo" aria-label="Flamelix — Home">
+                    <img src="logo.svg" alt="Flamelix" class="logo-img" width="120" height="28">
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                    <li><a href="#cases" data-i18n="nav_experience">Experience</a></li>
+                    <li><a href="#approach" data-i18n="nav_approach">How We Work</a></li>
+                    <li><a href="#team" data-i18n="nav_team">Team</a></li>
+                    <li><a href="#contact" class="nav-cta" data-i18n="nav_contact">Get in Touch</a></li>
+                </ul>
+                <!-- Language Switcher -->
+                <div class="lang-switcher" id="langSwitcher" role="group" aria-label="Language">
+                    <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+                    <button class="lang-btn" data-lang="ru" aria-label="Русский">RU</button>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile menu overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg-effects" aria-hidden="true">
+                <div class="aurora aurora-1"></div>
+                <div class="aurora aurora-2"></div>
+                <div class="aurora aurora-3"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot" aria-hidden="true"></span>
+                        <span data-i18n="hero_badge">Marketing & IT Team for Real Estate</span>
+                    </div>
+                    <h1 class="hero-title" data-i18n-html="hero_title">
+                        We help achieve<br><span class="gradient-text">sales targets</span> by<br>building data-driven<br>marketing systems
+                    </h1>
+                    <p class="hero-subtitle" data-i18n="hero_subtitle">
+                        We work across all stages: from market analysis to strategy execution — through research, creating marketing materials, lead generation, CRM implementation, and end-to-end analytics setup.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <span data-i18n="hero_cta">Start a Project</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#cases" class="btn btn-ghost" data-i18n="hero_cta2">Our Experience</a>
+                    </div>
+                    <div class="hero-metrics">
+                        <div class="metric">
+                            <div class="metric-value" data-target="30" data-suffix="+">0</div>
+                            <div class="metric-label" data-i18n="metric_projects">Projects delivered</div>
+                        </div>
+                        <div class="metric-divider" aria-hidden="true"></div>
+                        <div class="metric">
+                            <div class="metric-value" data-target="7" data-suffix="+">0</div>
+                            <div class="metric-label" data-i18n="metric_years">Years of experience</div>
+                        </div>
+                        <div class="metric-divider" aria-hidden="true"></div>
+                        <div class="metric">
+                            <div class="metric-value" data-target="5">0</div>
+                            <div class="metric-label" data-i18n="metric_countries">Countries</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator" aria-hidden="true">
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-label" data-i18n="services_label">What We Do</div>
+                <h2 class="section-title" data-i18n-html="services_title">A ready-made team that takes<br>full ownership of your marketing system</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-aos>
+                        <div class="service-number">01</div>
+                        <div class="service-icon-wrap" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                        </div>
+                        <h3 data-i18n="s1_title">Research</h3>
+                        <p data-i18n="s1_desc">Market analysis, in-depth customer interviews, internal process audits, advertising channel potential assessment</p>
+                        <ul class="service-tags">
+                            <li data-i18n="s1_t1">Market Analysis</li>
+                            <li data-i18n="s1_t2">Interviews</li>
+                            <li data-i18n="s1_t3">Audits</li>
+                            <li data-i18n="s1_t4">Channel Assessment</li>
+                        </ul>
+                    </div>
+                    <div class="service-card" data-aos>
+                        <div class="service-number">02</div>
+                        <div class="service-icon-wrap" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 data-i18n="s2_title">Customer Experience</h3>
+                        <p data-i18n="s2_desc">We implement a human-centered approach — learning to listen to customers. Applied to product development, strategies, IT infrastructure, and team processes</p>
+                        <ul class="service-tags">
+                            <li data-i18n="s2_t1">CX Strategy</li>
+                            <li data-i18n="s2_t2">Human-Centered</li>
+                            <li data-i18n="s2_t3">Journey Mapping</li>
+                            <li data-i18n="s2_t4">Conversion</li>
+                        </ul>
+                    </div>
+                    <div class="service-card" data-aos>
+                        <div class="service-number">03</div>
+                        <div class="service-icon-wrap" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+                        </div>
+                        <h3 data-i18n="s3_title">Marketing Strategy</h3>
+                        <p data-i18n="s3_desc">We develop and execute strategies aligned with sales targets — from positioning to channel mix optimization</p>
+                        <ul class="service-tags">
+                            <li data-i18n="s3_t1">Strategy</li>
+                            <li data-i18n="s3_t2">Sales Targets</li>
+                            <li data-i18n="s3_t3">Positioning</li>
+                            <li data-i18n="s3_t4">Channel Mix</li>
+                        </ul>
+                    </div>
+                    <div class="service-card" data-aos>
+                        <div class="service-number">04</div>
+                        <div class="service-icon-wrap" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                        <h3 data-i18n="s4_title">Lead Generation</h3>
+                        <p data-i18n="s4_desc">Scalable customer acquisition through performance advertising and integration with online and offline events</p>
+                        <ul class="service-tags">
+                            <li>Performance</li>
+                            <li data-i18n="s4_t2">Paid Ads</li>
+                            <li data-i18n="s4_t3">Events</li>
+                            <li data-i18n="s4_t4">Scalable Growth</li>
+                        </ul>
+                    </div>
+                    <div class="service-card" data-aos>
+                        <div class="service-number">05</div>
+                        <div class="service-icon-wrap" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                        </div>
+                        <h3 data-i18n="s5_title">Sales Materials</h3>
+                        <p data-i18n="s5_desc">We create websites, landing pages, presentations, creatives, and advertising materials that convert</p>
+                        <ul class="service-tags">
+                            <li data-i18n="s5_t1">Websites</li>
+                            <li data-i18n="s5_t2">Landing Pages</li>
+                            <li data-i18n="s5_t3">Presentations</li>
+                            <li data-i18n="s5_t4">Creatives</li>
+                        </ul>
+                    </div>
+                    <div class="service-card" data-aos>
+                        <div class="service-number">06</div>
+                        <div class="service-icon-wrap" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4h-4z"/></svg>
+                        </div>
+                        <h3 data-i18n="s6_title">End-to-End Analytics</h3>
+                        <p data-i18n="s6_desc">We track the journey from advertising spend to leads, funnel stages, and closed deals in CRM</p>
+                        <ul class="service-tags">
+                            <li data-i18n="s6_t1">Analytics</li>
+                            <li>CRM</li>
+                            <li data-i18n="s6_t3">Attribution</li>
+                            <li data-i18n="s6_t4">ROI Tracking</li>
+                        </ul>
+                    </div>
+                    <div class="service-card service-card-wide" data-aos>
+                        <div class="service-number">07</div>
+                        <div class="service-icon-wrap" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg>
+                        </div>
+                        <h3 data-i18n="s7_title">Partner Marketing</h3>
+                        <p data-i18n="s7_desc">We build relationships with real estate agencies: create relationship systems, prepare partner materials, and conduct training</p>
+                        <ul class="service-tags">
+                            <li data-i18n="s7_t1">Agency Relations</li>
+                            <li data-i18n="s7_t2">Partner Materials</li>
+                            <li data-i18n="s7_t3">Training</li>
+                            <li data-i18n="s7_t4">Co-marketing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cases / Experience Section -->
+        <section id="cases" class="cases">
+            <div class="container">
+                <div class="section-label" data-i18n="cases_label">Experience</div>
+                <h2 class="section-title" data-i18n-html="cases_title">Proven track record with<br>industry leaders</h2>
+                <div class="cases-grid">
+                    <div class="case-card case-card-featured" data-aos>
+                        <div class="case-image" aria-hidden="true">
+                            <div class="case-aurora"></div>
+                            <div class="case-badge" data-i18n="c1_badge">Customer Experience & IT</div>
+                        </div>
+                        <div class="case-content">
+                            <div class="case-year">2023–2025</div>
+                            <h3>MR Group</h3>
+                            <p data-i18n="c1_desc">Managed Customer Experience projects, implemented changes to increase conversions at every stage of the customer journey. IT infrastructure transformation: CRM, electronic document management, online apartment purchases, marketplace website, mobile app.</p>
+                            <div class="case-metrics">
+                                <div class="case-metric">
+                                    <span class="case-metric-value">CX</span>
+                                    <span class="case-metric-label" data-i18n="c1_m1">Transformation</span>
+                                </div>
+                                <div class="case-metric">
+                                    <span class="case-metric-value">CRM</span>
+                                    <span class="case-metric-label" data-i18n="c1_m2">Implementation</span>
+                                </div>
+                                <div class="case-metric">
+                                    <span class="case-metric-value">App</span>
+                                    <span class="case-metric-label" data-i18n="c1_m3">Development</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-card" data-aos>
+                        <div class="case-image case-image-alt" aria-hidden="true">
+                            <div class="case-badge" data-i18n="c2_badge">SMM & Research</div>
+                        </div>
+                        <div class="case-content">
+                            <div class="case-year">2025</div>
+                            <h3>Yandex</h3>
+                            <p data-i18n="c2_desc">Audience research and social media communication strategy for Yandex's new division</p>
+                            <div class="case-metrics">
+                                <div class="case-metric">
+                                    <span class="case-metric-value">SMM</span>
+                                    <span class="case-metric-label" data-i18n="c2_m1">Strategy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-card" data-aos>
+                        <div class="case-image case-image-alt2" aria-hidden="true">
+                            <div class="case-badge" data-i18n="c3_badge">Digital Marketing</div>
+                        </div>
+                        <div class="case-content">
+                            <div class="case-year">2018–2019</div>
+                            <h3>Knight Frank</h3>
+                            <p data-i18n="c3_desc">Doubled sales of residential, commercial, and international real estate in one year. Built profitable digital marketing</p>
+                            <div class="case-metrics">
+                                <div class="case-metric">
+                                    <span class="case-metric-value">2x</span>
+                                    <span class="case-metric-label" data-i18n="c3_m1">Sales Growth</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Cases Grid -->
+                <div class="cases-list" data-aos>
+                    <div class="case-list-item">
+                        <span class="case-list-name">ENKA Flexity</span>
+                        <span class="case-list-desc" data-i18n="cl1_desc">From brand creation to delivering 3,500 workspaces</span>
+                        <span class="case-list-year">2023–2025</span>
+                    </div>
+                    <div class="case-list-item">
+                        <span class="case-list-name">Urban Escape, Bali</span>
+                        <span class="case-list-desc" data-i18n="cl2_desc">Sold a villa complex in 6 months</span>
+                        <span class="case-list-year">2025</span>
+                    </div>
+                    <div class="case-list-item">
+                        <span class="case-list-name">BREIG, Bali</span>
+                        <span class="case-list-desc" data-i18n="cl3_desc">Rebranded Bali's largest developer</span>
+                        <span class="case-list-year">2025</span>
+                    </div>
+                    <div class="case-list-item">
+                        <span class="case-list-name">Tranio</span>
+                        <span class="case-list-desc" data-i18n="cl4_desc">Built marketing department and lead generation across 5 countries</span>
+                        <span class="case-list-year">2024</span>
+                    </div>
+                    <div class="case-list-item">
+                        <span class="case-list-name">Smartis</span>
+                        <span class="case-list-desc" data-i18n="cl5_desc">End-to-end analytics and data-driven marketing for TOP-20 Russian developers</span>
+                        <span class="case-list-year">2020–2022</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How We Work Section -->
+        <section id="approach" class="insight">
+            <div class="container">
+                <div class="insight-card" data-aos>
+                    <div class="insight-quote-mark" aria-hidden="true">&ldquo;</div>
+                    <blockquote data-i18n="insight_quote">
+                        We form a ready-made team that takes full ownership of implementing your marketing system — from research and strategy to execution and analytics
+                    </blockquote>
+                    <div class="insight-author" data-i18n="insight_author">— Flamelix Approach</div>
+                    <div class="insight-mesh" aria-hidden="true"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Band Section -->
+        <section class="cta-band">
+            <div class="container">
+                <div class="cta-band-content" data-aos>
+                    <div class="cta-band-text">
+                        <h2 data-i18n="cta_title">Ready to hit your sales targets?</h2>
+                        <p data-i18n="cta_subtitle">Let's discuss your project and build a custom marketing system</p>
+                    </div>
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <span data-i18n="cta_btn">Get in Touch</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team-section">
+            <div class="container">
+                <div class="section-label" data-i18n="team_label">Team</div>
+                <h2 class="section-title" data-i18n-html="team_title">Expert team with<br>deep industry knowledge</h2>
+                <div class="team-grid">
+                    <div class="team-card" data-aos>
+                        <div class="team-avatar" aria-hidden="true">RA</div>
+                        <div class="team-info">
+                            <h4 data-i18n="t1_name">Rodion Angaev</h4>
+                            <p class="team-role" data-i18n="t1_role">Growth Strategies & Data-Driven Marketing</p>
+                            <p class="team-desc" data-i18n="t1_desc">Builds marketing systems and manages lead generation KPIs. Partner marketing expert.</p>
+                        </div>
+                    </div>
+                    <div class="team-card" data-aos>
+                        <div class="team-avatar" aria-hidden="true">IV</div>
+                        <div class="team-info">
+                            <h4 data-i18n="t2_name">Ilya Volgin</h4>
+                            <p class="team-role" data-i18n="t2_role">Customer Experience & Digital Transformation</p>
+                            <p class="team-desc" data-i18n="t2_desc">CX projects, marketplace websites, mobile apps, online real estate sales. Director of Digital Transformation at MR Group.</p>
+                        </div>
+                    </div>
+                    <div class="team-card" data-aos>
+                        <div class="team-avatar" aria-hidden="true">AV</div>
+                        <div class="team-info">
+                            <h4 data-i18n="t3_name">Alexander Vorobyov</h4>
+                            <p class="team-role" data-i18n="t3_role">Branding, Websites & Presentations</p>
+                            <p class="team-desc" data-i18n="t3_desc">Over 30 real estate projects. Creates sales materials: websites, presentations, and advertising creatives.</p>
+                        </div>
+                    </div>
+                    <div class="team-card" data-aos>
+                        <div class="team-avatar" aria-hidden="true">AS</div>
+                        <div class="team-info">
+                            <h4 data-i18n="t4_name">Andrey Sokolov</h4>
+                            <p class="team-role" data-i18n="t4_role">Analytics & Automation</p>
+                            <p class="team-desc" data-i18n="t4_desc">System and end-to-end analytics, marketing and sales automation. Builds reporting from ad investments to closed deals in CRM.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info" data-aos>
+                        <div class="section-label" data-i18n="contact_label">Contact</div>
+                        <h2 class="section-title" data-i18n-html="contact_title">Let's build your<br>marketing system</h2>
+                        <p class="contact-description" data-i18n="contact_desc">Tell us about your project, and we'll propose the optimal solution to hit your sales targets</p>
+                        <div class="contact-details">
+                            <a href="mailto:info@flamelix.com" class="contact-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+                                info@flamelix.com
+                            </a>
+                            <a href="https://wa.me/79032317693" class="contact-link" target="_blank" rel="noopener">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                                +7 903 231-76-93
+                            </a>
+                            <a href="https://t.me/rodionbat" class="contact-link" target="_blank" rel="noopener">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                                @rodionbat
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form" data-aos id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name" data-i18n="form_name">Name</label>
+                                <input type="text" id="form-name" name="name" data-i18n-placeholder="form_name_ph" placeholder="Your name" required autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email</label>
+                                <input type="email" id="form-email" name="email" placeholder="email@company.com" required autocomplete="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-project" data-i18n="form_project">About your project</label>
+                            <textarea id="form-project" name="project" data-i18n-placeholder="form_project_ph" placeholder="Tell us about your project and goals..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span data-i18n="form_submit">Send Request</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <a href="#home" class="logo" aria-label="Flamelix — Home">
+                        <img src="logo.svg" alt="Flamelix" class="logo-img logo-img-light" width="120" height="28">
+                    </a>
+                    <p class="footer-desc" data-i18n="footer_desc">Marketing & IT Team for Real Estate Developers</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#services" data-i18n="nav_services">Services</a>
+                    <a href="#cases" data-i18n="nav_experience">Experience</a>
+                    <a href="#team" data-i18n="nav_team">Team</a>
+                    <a href="#contact" data-i18n="contact_label">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://wa.me/79032317693" aria-label="WhatsApp" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                    </a>
+                    <a href="https://t.me/rodionbat" aria-label="Telegram" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copy">&copy; 2025 Flamelix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
