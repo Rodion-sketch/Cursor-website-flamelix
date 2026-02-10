@@ -16,13 +16,13 @@
     <meta property="og:image" content="https://flamelix.com/og-image.jpg">
 
     <!-- Favicon -->
-    <link rel="icon" href="logo.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="logo.svg">
+    <link rel="icon" href="Flamelix Logo (1).png" type="image/png">
+    <link rel="apple-touch-icon" href="Flamelix Logo (1).png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
@@ -34,7 +34,7 @@
         "@type": "Organization",
         "name": "Flamelix",
         "url": "https://flamelix.com",
-        "logo": "https://flamelix.com/logo.svg",
+        "logo": "https://flamelix.com/Flamelix%20Logo%20(1).png",
         "description": "Marketing & IT Team for Real Estate Developers",
         "contactPoint": {
             "@type": "ContactPoint",
@@ -52,25 +52,22 @@
     <noscript>
         <style>
             [data-aos] { opacity: 1 !important; transform: none !important; }
-            #particleCanvas { display: none; }
+            .faq-answer { display: block !important; max-height: none !important; }
         </style>
     </noscript>
 </head>
 <body>
-    <!-- Particle Canvas Background -->
-    <canvas id="particleCanvas" aria-hidden="true"></canvas>
-
     <!-- Navigation -->
     <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="nav-content">
                 <a href="#home" class="logo" aria-label="Flamelix — Home">
-                    <img src="logo.svg" alt="Flamelix" class="logo-img" width="120" height="28">
+                    <img src="Flamelix Logo (1).png" alt="Flamelix" class="logo-img" width="130" height="32">
                 </a>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#services" data-i18n="nav_services">Services</a></li>
                     <li><a href="#cases" data-i18n="nav_experience">Experience</a></li>
-                    <li><a href="#approach" data-i18n="nav_approach">How We Work</a></li>
+                    <li><a href="#process" data-i18n="nav_approach">How We Work</a></li>
                     <li><a href="#team" data-i18n="nav_team">Team</a></li>
                     <li><a href="#contact" class="nav-cta" data-i18n="nav_contact">Get in Touch</a></li>
                 </ul>
@@ -95,18 +92,17 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-bg-effects" aria-hidden="true">
-                <div class="aurora aurora-1"></div>
-                <div class="aurora aurora-2"></div>
-                <div class="aurora aurora-3"></div>
+                <div class="hero-gradient"></div>
+                <div class="hero-grid-lines"></div>
             </div>
             <div class="container">
                 <div class="hero-content">
-                    <div class="hero-badge">
-                        <span class="badge-dot" aria-hidden="true"></span>
+                    <div class="hero-eyebrow">
+                        <span class="eyebrow-line" aria-hidden="true"></span>
                         <span data-i18n="hero_badge">Marketing & IT Team for Real Estate</span>
                     </div>
                     <h1 class="hero-title" data-i18n-html="hero_title">
-                        We help achieve<br><span class="gradient-text">sales targets</span> by<br>building data-driven<br>marketing systems
+                        We help achieve<br><span class="gradient-text">sales targets</span> by building<br>data-driven marketing systems.
                     </h1>
                     <p class="hero-subtitle" data-i18n="hero_subtitle">
                         We work across all stages: from market analysis to strategy execution — through research, creating marketing materials, lead generation, CRM implementation, and end-to-end analytics setup.
@@ -114,136 +110,225 @@
                     <div class="hero-actions">
                         <a href="#contact" class="btn btn-primary">
                             <span data-i18n="hero_cta">Start a Project</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </a>
-                        <a href="#cases" class="btn btn-ghost" data-i18n="hero_cta2">Our Experience</a>
+                        <a href="#services" class="btn btn-outline" data-i18n="hero_cta2">Explore Our Services</a>
                     </div>
-                    <div class="hero-metrics">
-                        <div class="metric">
-                            <div class="metric-value" data-target="30" data-suffix="+">0</div>
-                            <div class="metric-label" data-i18n="metric_projects">Projects delivered</div>
-                        </div>
-                        <div class="metric-divider" aria-hidden="true"></div>
-                        <div class="metric">
-                            <div class="metric-value" data-target="7" data-suffix="+">0</div>
-                            <div class="metric-label" data-i18n="metric_years">Years of experience</div>
-                        </div>
-                        <div class="metric-divider" aria-hidden="true"></div>
-                        <div class="metric">
-                            <div class="metric-value" data-target="5">0</div>
-                            <div class="metric-label" data-i18n="metric_countries">Countries</div>
-                        </div>
+                </div>
+                <div class="hero-metrics">
+                    <div class="metric">
+                        <div class="metric-value" data-target="30" data-suffix="+">0</div>
+                        <div class="metric-label" data-i18n="metric_projects">Projects delivered</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value" data-target="7" data-suffix="+">0</div>
+                        <div class="metric-label" data-i18n="metric_years">Years of experience</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value" data-target="5">0</div>
+                        <div class="metric-label" data-i18n="metric_countries">Countries</div>
                     </div>
                 </div>
             </div>
-            <div class="hero-scroll-indicator" aria-hidden="true">
-                <div class="scroll-line"></div>
+        </section>
+
+        <!-- Trusted By Marquee -->
+        <section class="trusted-by" aria-label="Trusted by">
+            <div class="marquee-strip">
+                <div class="marquee-label">/ <span data-i18n="trusted_label">TRUSTED BY</span></div>
+                <div class="marquee-track">
+                    <div class="marquee-inner">
+                        <span class="marquee-item">MR Group</span>
+                        <span class="marquee-dot" aria-hidden="true"></span>
+                        <span class="marquee-item">Yandex</span>
+                        <span class="marquee-dot" aria-hidden="true"></span>
+                        <span class="marquee-item">Knight Frank</span>
+                        <span class="marquee-dot" aria-hidden="true"></span>
+                        <span class="marquee-item">ENKA Flexity</span>
+                        <span class="marquee-dot" aria-hidden="true"></span>
+                        <span class="marquee-item">Tranio</span>
+                        <span class="marquee-dot" aria-hidden="true"></span>
+                        <span class="marquee-item">Smartis</span>
+                        <span class="marquee-dot" aria-hidden="true"></span>
+                        <span class="marquee-item">Urban Escape</span>
+                        <span class="marquee-dot" aria-hidden="true"></span>
+                        <span class="marquee-item">BREIG</span>
+                        <span class="marquee-dot" aria-hidden="true"></span>
+                        <!-- Duplicate for seamless loop -->
+                        <span class="marquee-item">MR Group</span>
+                        <span class="marquee-dot" aria-hidden="true"></span>
+                        <span class="marquee-item">Yandex</span>
+                        <span class="marquee-dot" aria-hidden="true"></span>
+                        <span class="marquee-item">Knight Frank</span>
+                        <span class="marquee-dot" aria-hidden="true"></span>
+                        <span class="marquee-item">ENKA Flexity</span>
+                        <span class="marquee-dot" aria-hidden="true"></span>
+                        <span class="marquee-item">Tranio</span>
+                        <span class="marquee-dot" aria-hidden="true"></span>
+                        <span class="marquee-item">Smartis</span>
+                        <span class="marquee-dot" aria-hidden="true"></span>
+                        <span class="marquee-item">Urban Escape</span>
+                        <span class="marquee-dot" aria-hidden="true"></span>
+                        <span class="marquee-item">BREIG</span>
+                        <span class="marquee-dot" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenges Section (like Subduxion) -->
+        <section class="challenges">
+            <div class="container">
+                <div class="challenges-header" data-aos>
+                    <p class="challenges-intro" data-i18n="challenges_intro">We recognize the challenges you face. That is why your path to impact starts here.</p>
+                </div>
+                <div class="challenges-grid" data-aos>
+                    <div class="challenge-item">
+                        <div class="challenge-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/></svg>
+                        </div>
+                        <p data-i18n="ch1">Marketing budgets without measurable return on investment.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <div class="challenge-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/></svg>
+                        </div>
+                        <p data-i18n="ch2">Disconnected teams handling strategy, creative, and analytics in silos.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <div class="challenge-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/></svg>
+                        </div>
+                        <p data-i18n="ch3">Sales targets missed due to lack of data-driven decision making.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <div class="challenge-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/></svg>
+                        </div>
+                        <p data-i18n="ch4">Technology investments that add cost instead of driving growth.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Services Section -->
         <section id="services" class="services">
             <div class="container">
-                <div class="section-label" data-i18n="services_label">What We Do</div>
-                <h2 class="section-title" data-i18n-html="services_title">A ready-made team that takes<br>full ownership of your marketing system</h2>
+                <div class="section-header" data-aos>
+                    <div class="section-label">/ <span data-i18n="services_label">OUR SERVICES</span></div>
+                    <h2 class="section-title" data-i18n-html="services_title">Capabilities</h2>
+                    <p class="section-desc" data-i18n="services_desc">A ready-made team that takes full ownership of your marketing system. We design and deliver solutions that solve real business challenges and create measurable impact.</p>
+                </div>
                 <div class="services-grid">
                     <div class="service-card" data-aos>
-                        <div class="service-number">01</div>
                         <div class="service-icon-wrap" aria-hidden="true">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
                         </div>
                         <h3 data-i18n="s1_title">Research</h3>
                         <p data-i18n="s1_desc">Market analysis, in-depth customer interviews, internal process audits, advertising channel potential assessment</p>
-                        <ul class="service-tags">
-                            <li data-i18n="s1_t1">Market Analysis</li>
-                            <li data-i18n="s1_t2">Interviews</li>
-                            <li data-i18n="s1_t3">Audits</li>
-                            <li data-i18n="s1_t4">Channel Assessment</li>
-                        </ul>
                     </div>
                     <div class="service-card" data-aos>
-                        <div class="service-number">02</div>
                         <div class="service-icon-wrap" aria-hidden="true">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                         </div>
                         <h3 data-i18n="s2_title">Customer Experience</h3>
                         <p data-i18n="s2_desc">We implement a human-centered approach — learning to listen to customers. Applied to product development, strategies, IT infrastructure, and team processes</p>
-                        <ul class="service-tags">
-                            <li data-i18n="s2_t1">CX Strategy</li>
-                            <li data-i18n="s2_t2">Human-Centered</li>
-                            <li data-i18n="s2_t3">Journey Mapping</li>
-                            <li data-i18n="s2_t4">Conversion</li>
-                        </ul>
                     </div>
                     <div class="service-card" data-aos>
-                        <div class="service-number">03</div>
                         <div class="service-icon-wrap" aria-hidden="true">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
                         </div>
                         <h3 data-i18n="s3_title">Marketing Strategy</h3>
                         <p data-i18n="s3_desc">We develop and execute strategies aligned with sales targets — from positioning to channel mix optimization</p>
-                        <ul class="service-tags">
-                            <li data-i18n="s3_t1">Strategy</li>
-                            <li data-i18n="s3_t2">Sales Targets</li>
-                            <li data-i18n="s3_t3">Positioning</li>
-                            <li data-i18n="s3_t4">Channel Mix</li>
-                        </ul>
                     </div>
                     <div class="service-card" data-aos>
-                        <div class="service-number">04</div>
                         <div class="service-icon-wrap" aria-hidden="true">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
                         </div>
                         <h3 data-i18n="s4_title">Lead Generation</h3>
                         <p data-i18n="s4_desc">Scalable customer acquisition through performance advertising and integration with online and offline events</p>
-                        <ul class="service-tags">
-                            <li>Performance</li>
-                            <li data-i18n="s4_t2">Paid Ads</li>
-                            <li data-i18n="s4_t3">Events</li>
-                            <li data-i18n="s4_t4">Scalable Growth</li>
-                        </ul>
                     </div>
                     <div class="service-card" data-aos>
-                        <div class="service-number">05</div>
                         <div class="service-icon-wrap" aria-hidden="true">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
                         </div>
                         <h3 data-i18n="s5_title">Sales Materials</h3>
                         <p data-i18n="s5_desc">We create websites, landing pages, presentations, creatives, and advertising materials that convert</p>
-                        <ul class="service-tags">
-                            <li data-i18n="s5_t1">Websites</li>
-                            <li data-i18n="s5_t2">Landing Pages</li>
-                            <li data-i18n="s5_t3">Presentations</li>
-                            <li data-i18n="s5_t4">Creatives</li>
-                        </ul>
                     </div>
                     <div class="service-card" data-aos>
-                        <div class="service-number">06</div>
                         <div class="service-icon-wrap" aria-hidden="true">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4h-4z"/></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4h-4z"/></svg>
                         </div>
                         <h3 data-i18n="s6_title">End-to-End Analytics</h3>
                         <p data-i18n="s6_desc">We track the journey from advertising spend to leads, funnel stages, and closed deals in CRM</p>
-                        <ul class="service-tags">
-                            <li data-i18n="s6_t1">Analytics</li>
-                            <li>CRM</li>
-                            <li data-i18n="s6_t3">Attribution</li>
-                            <li data-i18n="s6_t4">ROI Tracking</li>
-                        </ul>
                     </div>
-                    <div class="service-card service-card-wide" data-aos>
-                        <div class="service-number">07</div>
+                    <div class="service-card service-card-accent" data-aos>
                         <div class="service-icon-wrap" aria-hidden="true">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg>
                         </div>
                         <h3 data-i18n="s7_title">Partner Marketing</h3>
                         <p data-i18n="s7_desc">We build relationships with real estate agencies: create relationship systems, prepare partner materials, and conduct training</p>
-                        <ul class="service-tags">
-                            <li data-i18n="s7_t1">Agency Relations</li>
-                            <li data-i18n="s7_t2">Partner Materials</li>
-                            <li data-i18n="s7_t3">Training</li>
-                            <li data-i18n="s7_t4">Co-marketing</li>
-                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section (Subduxion-style numbered steps) -->
+        <section id="process" class="process">
+            <div class="container">
+                <div class="section-header" data-aos>
+                    <div class="section-label">/ <span data-i18n="process_label">OUR APPROACH</span></div>
+                    <h2 class="section-title" data-i18n="process_title">How we work</h2>
+                    <p class="section-desc" data-i18n="process_desc">We form a ready-made team that takes full ownership of implementing your marketing system.</p>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step" data-aos>
+                        <div class="step-number">/01</div>
+                        <div class="step-content">
+                            <h3 data-i18n="step1_title">Discover</h3>
+                            <p data-i18n="step1_desc">We start by understanding your goals, audience, and challenges. Deep market research, customer interviews, and internal audits reveal opportunities and surface actionable insights.</p>
+                        </div>
+                        <div class="step-visual" aria-hidden="true">
+                            <div class="step-icon-large">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step" data-aos>
+                        <div class="step-number">/02</div>
+                        <div class="step-content">
+                            <h3 data-i18n="step2_title">Strategize</h3>
+                            <p data-i18n="step2_desc">We develop a comprehensive marketing strategy aligned with your sales targets. From positioning and channel mix to CRM architecture and analytics setup.</p>
+                        </div>
+                        <div class="step-visual" aria-hidden="true">
+                            <div class="step-icon-large">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step" data-aos>
+                        <div class="step-number">/03</div>
+                        <div class="step-content">
+                            <h3 data-i18n="step3_title">Execute</h3>
+                            <p data-i18n="step3_desc">We build and launch — creating materials, setting up advertising, implementing CRM, and configuring end-to-end analytics. Full ownership from day one.</p>
+                        </div>
+                        <div class="step-visual" aria-hidden="true">
+                            <div class="step-icon-large">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step" data-aos>
+                        <div class="step-number">/04</div>
+                        <div class="step-content">
+                            <h3 data-i18n="step4_title">Optimize</h3>
+                            <p data-i18n="step4_desc">We track results, refine performance, and scale what works. Continuous improvement driven by data — from ad investments to closed deals in CRM.</p>
+                        </div>
+                        <div class="step-visual" aria-hidden="true">
+                            <div class="step-icon-large">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4h-4z"/></svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -252,12 +337,14 @@
         <!-- Cases / Experience Section -->
         <section id="cases" class="cases">
             <div class="container">
-                <div class="section-label" data-i18n="cases_label">Experience</div>
-                <h2 class="section-title" data-i18n-html="cases_title">Proven track record with<br>industry leaders</h2>
+                <div class="section-header" data-aos>
+                    <div class="section-label">/ <span data-i18n="cases_label">EXPERIENCE</span></div>
+                    <h2 class="section-title" data-i18n-html="cases_title">Proven track record with<br>industry leaders</h2>
+                </div>
                 <div class="cases-grid">
                     <div class="case-card case-card-featured" data-aos>
                         <div class="case-image" aria-hidden="true">
-                            <div class="case-aurora"></div>
+                            <div class="case-gradient"></div>
                             <div class="case-badge" data-i18n="c1_badge">Customer Experience & IT</div>
                         </div>
                         <div class="case-content">
@@ -314,7 +401,7 @@
                     </div>
                 </div>
 
-                <!-- More Cases Grid -->
+                <!-- More Cases List -->
                 <div class="cases-list" data-aos>
                     <div class="case-list-item">
                         <span class="case-list-name">ENKA Flexity</span>
@@ -345,20 +432,6 @@
             </div>
         </section>
 
-        <!-- How We Work Section -->
-        <section id="approach" class="insight">
-            <div class="container">
-                <div class="insight-card" data-aos>
-                    <div class="insight-quote-mark" aria-hidden="true">&ldquo;</div>
-                    <blockquote data-i18n="insight_quote">
-                        We form a ready-made team that takes full ownership of implementing your marketing system — from research and strategy to execution and analytics
-                    </blockquote>
-                    <div class="insight-author" data-i18n="insight_author">— Flamelix Approach</div>
-                    <div class="insight-mesh" aria-hidden="true"></div>
-                </div>
-            </div>
-        </section>
-
         <!-- CTA Band Section -->
         <section class="cta-band">
             <div class="container">
@@ -369,7 +442,7 @@
                     </div>
                     <a href="#contact" class="btn btn-primary btn-lg">
                         <span data-i18n="cta_btn">Get in Touch</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                 </div>
             </div>
@@ -378,8 +451,11 @@
         <!-- Team Section -->
         <section id="team" class="team-section">
             <div class="container">
-                <div class="section-label" data-i18n="team_label">Team</div>
-                <h2 class="section-title" data-i18n-html="team_title">Expert team with<br>deep industry knowledge</h2>
+                <div class="section-header" data-aos>
+                    <div class="section-label">/ <span data-i18n="team_label">TEAM</span></div>
+                    <h2 class="section-title" data-i18n-html="team_title">The partner you have<br>been looking for</h2>
+                    <p class="section-desc" data-i18n="team_desc">We bring together a wealth of experience to make marketing work. Partnering with developers to design bespoke solutions that meet their highest standards.</p>
+                </div>
                 <div class="team-grid">
                     <div class="team-card" data-aos>
                         <div class="team-avatar" aria-hidden="true">RA</div>
@@ -417,25 +493,82 @@
             </div>
         </section>
 
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header" data-aos>
+                    <div class="section-label">/ FAQ</div>
+                    <h2 class="section-title" data-i18n="faq_title">Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-list" data-aos>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-i18n="faq1_q">Why choose Flamelix?</span>
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-i18n="faq1_a">Flamelix is dedicated to delivering measurable results for real estate developers. We provide a complete marketing team — from research and strategy to execution and analytics — eliminating the need to coordinate multiple agencies. Our deep industry expertise across 30+ projects ensures solutions tailored to your specific market.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-i18n="faq2_q">What makes Flamelix different from other agencies?</span>
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-i18n="faq2_a">We are not a traditional marketing agency. We form a dedicated team embedded in your processes — covering research, CX, strategy, lead generation, sales materials, CRM, and end-to-end analytics. We focus on full-lifecycle support tied directly to your sales targets, not vanity metrics.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-i18n="faq3_q">What industries do you work with?</span>
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-i18n="faq3_a">We specialize in real estate development — residential, commercial, and international properties. Our clients include top developers like MR Group, Knight Frank, and ENKA, as well as proptech companies and international real estate platforms across 5 countries.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-i18n="faq4_q">Do we need an in-house marketing team to work with you?</span>
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-i18n="faq4_a">Not at all. We function as your complete marketing department — handling everything from strategy to implementation. If you already have a team, we integrate seamlessly, filling gaps and amplifying capabilities. Either way, you get a full-cycle solution.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-i18n="faq5_q">How do you measure success?</span>
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-i18n="faq5_a">Everything is tied to your business goals. We set up end-to-end analytics tracking the full journey — from advertising spend to leads, funnel stages, and closed deals in CRM. You see exactly how every ruble or dollar of your marketing budget translates into sales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
                 <div class="contact-wrapper">
                     <div class="contact-info" data-aos>
-                        <div class="section-label" data-i18n="contact_label">Contact</div>
+                        <div class="section-label">/ <span data-i18n="contact_label">CONTACT</span></div>
                         <h2 class="section-title" data-i18n-html="contact_title">Let's build your<br>marketing system</h2>
                         <p class="contact-description" data-i18n="contact_desc">Tell us about your project, and we'll propose the optimal solution to hit your sales targets</p>
                         <div class="contact-details">
                             <a href="mailto:info@flamelix.com" class="contact-link">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
                                 info@flamelix.com
                             </a>
                             <a href="https://wa.me/79032317693" class="contact-link" target="_blank" rel="noopener">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
                                 +7 903 231-76-93
                             </a>
                             <a href="https://t.me/rodionbat" class="contact-link" target="_blank" rel="noopener">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
                                 @rodionbat
                             </a>
                         </div>
@@ -457,7 +590,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary btn-full">
                             <span data-i18n="form_submit">Send Request</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </button>
                     </form>
                 </div>
@@ -471,7 +604,7 @@
             <div class="footer-content">
                 <div class="footer-left">
                     <a href="#home" class="logo" aria-label="Flamelix — Home">
-                        <img src="logo.svg" alt="Flamelix" class="logo-img logo-img-light" width="120" height="28">
+                        <img src="Flamelix Logo (1).png" alt="Flamelix" class="logo-img logo-img-light" width="130" height="32">
                     </a>
                     <p class="footer-desc" data-i18n="footer_desc">Marketing & IT Team for Real Estate Developers</p>
                 </div>
@@ -483,10 +616,10 @@
                 </div>
                 <div class="footer-social">
                     <a href="https://wa.me/79032317693" aria-label="WhatsApp" target="_blank" rel="noopener">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
                     </a>
                     <a href="https://t.me/rodionbat" aria-label="Telegram" target="_blank" rel="noopener">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
                     </a>
                 </div>
             </div>

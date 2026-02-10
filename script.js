@@ -17,41 +17,58 @@ const translations = {
 
         // Hero
         hero_badge: 'Marketing & IT Team for Real Estate',
-        hero_title: 'We help achieve<br><span class="gradient-text">sales targets</span> by<br>building data-driven<br>marketing systems',
+        hero_title: 'We help achieve<br><span class="gradient-text">sales targets</span> by building<br>data-driven marketing systems.',
         hero_subtitle: 'We work across all stages: from market analysis to strategy execution — through research, creating marketing materials, lead generation, CRM implementation, and end-to-end analytics setup.',
         hero_cta: 'Start a Project',
-        hero_cta2: 'Our Experience',
+        hero_cta2: 'Explore Our Services',
         metric_projects: 'Projects delivered',
         metric_years: 'Years of experience',
         metric_countries: 'Countries',
 
+        // Trusted By
+        trusted_label: 'TRUSTED BY',
+
+        // Challenges
+        challenges_intro: 'We recognize the challenges you face. That is why your path to impact starts here.',
+        ch1: 'Marketing budgets without measurable return on investment.',
+        ch2: 'Disconnected teams handling strategy, creative, and analytics in silos.',
+        ch3: 'Sales targets missed due to lack of data-driven decision making.',
+        ch4: 'Technology investments that add cost instead of driving growth.',
+
         // Services
-        services_label: 'What We Do',
-        services_title: 'A ready-made team that takes<br>full ownership of your marketing system',
+        services_label: 'OUR SERVICES',
+        services_title: 'Capabilities',
+        services_desc: 'A ready-made team that takes full ownership of your marketing system. We design and deliver solutions that solve real business challenges and create measurable impact.',
         s1_title: 'Research',
         s1_desc: 'Market analysis, in-depth customer interviews, internal process audits, advertising channel potential assessment',
-        s1_t1: 'Market Analysis', s1_t2: 'Interviews', s1_t3: 'Audits', s1_t4: 'Channel Assessment',
         s2_title: 'Customer Experience',
         s2_desc: 'We implement a human-centered approach — learning to listen to customers. Applied to product development, strategies, IT infrastructure, and team processes',
-        s2_t1: 'CX Strategy', s2_t2: 'Human-Centered', s2_t3: 'Journey Mapping', s2_t4: 'Conversion',
         s3_title: 'Marketing Strategy',
         s3_desc: 'We develop and execute strategies aligned with sales targets — from positioning to channel mix optimization',
-        s3_t1: 'Strategy', s3_t2: 'Sales Targets', s3_t3: 'Positioning', s3_t4: 'Channel Mix',
         s4_title: 'Lead Generation',
         s4_desc: 'Scalable customer acquisition through performance advertising and integration with online and offline events',
-        s4_t2: 'Paid Ads', s4_t3: 'Events', s4_t4: 'Scalable Growth',
         s5_title: 'Sales Materials',
         s5_desc: 'We create websites, landing pages, presentations, creatives, and advertising materials that convert',
-        s5_t1: 'Websites', s5_t2: 'Landing Pages', s5_t3: 'Presentations', s5_t4: 'Creatives',
         s6_title: 'End-to-End Analytics',
         s6_desc: 'We track the journey from advertising spend to leads, funnel stages, and closed deals in CRM',
-        s6_t1: 'Analytics', s6_t3: 'Attribution', s6_t4: 'ROI Tracking',
         s7_title: 'Partner Marketing',
         s7_desc: 'We build relationships with real estate agencies: create relationship systems, prepare partner materials, and conduct training',
-        s7_t1: 'Agency Relations', s7_t2: 'Partner Materials', s7_t3: 'Training', s7_t4: 'Co-marketing',
+
+        // Process
+        process_label: 'OUR APPROACH',
+        process_title: 'How we work',
+        process_desc: 'We form a ready-made team that takes full ownership of implementing your marketing system.',
+        step1_title: 'Discover',
+        step1_desc: 'We start by understanding your goals, audience, and challenges. Deep market research, customer interviews, and internal audits reveal opportunities and surface actionable insights.',
+        step2_title: 'Strategize',
+        step2_desc: 'We develop a comprehensive marketing strategy aligned with your sales targets. From positioning and channel mix to CRM architecture and analytics setup.',
+        step3_title: 'Execute',
+        step3_desc: 'We build and launch — creating materials, setting up advertising, implementing CRM, and configuring end-to-end analytics. Full ownership from day one.',
+        step4_title: 'Optimize',
+        step4_desc: 'We track results, refine performance, and scale what works. Continuous improvement driven by data — from ad investments to closed deals in CRM.',
 
         // Cases
-        cases_label: 'Experience',
+        cases_label: 'EXPERIENCE',
         cases_title: 'Proven track record with<br>industry leaders',
         c1_badge: 'Customer Experience & IT',
         c1_desc: 'Managed Customer Experience projects, implemented changes to increase conversions at every stage of the customer journey. IT infrastructure transformation: CRM, electronic document management, online apartment purchases, marketplace website, mobile app.',
@@ -68,18 +85,15 @@ const translations = {
         cl4_desc: 'Built marketing department and lead generation across 5 countries',
         cl5_desc: 'End-to-end analytics and data-driven marketing for TOP-20 Russian developers',
 
-        // Insight
-        insight_quote: 'We form a ready-made team that takes full ownership of implementing your marketing system — from research and strategy to execution and analytics',
-        insight_author: '— Flamelix Approach',
-
         // CTA Band
         cta_title: 'Ready to hit your sales targets?',
         cta_subtitle: "Let's discuss your project and build a custom marketing system",
         cta_btn: 'Get in Touch',
 
         // Team
-        team_label: 'Team',
-        team_title: 'Expert team with<br>deep industry knowledge',
+        team_label: 'TEAM',
+        team_title: 'The partner you have<br>been looking for',
+        team_desc: 'We bring together a wealth of experience to make marketing work. Partnering with developers to design bespoke solutions that meet their highest standards.',
         t1_name: 'Rodion Angaev', t1_role: 'Growth Strategies & Data-Driven Marketing',
         t1_desc: 'Builds marketing systems and manages lead generation KPIs. Partner marketing expert.',
         t2_name: 'Ilya Volgin', t2_role: 'Customer Experience & Digital Transformation',
@@ -89,8 +103,21 @@ const translations = {
         t4_name: 'Andrey Sokolov', t4_role: 'Analytics & Automation',
         t4_desc: 'System and end-to-end analytics, marketing and sales automation. Builds reporting from ad investments to closed deals in CRM.',
 
+        // FAQ
+        faq_title: 'Frequently Asked Questions',
+        faq1_q: 'Why choose Flamelix?',
+        faq1_a: 'Flamelix is dedicated to delivering measurable results for real estate developers. We provide a complete marketing team — from research and strategy to execution and analytics — eliminating the need to coordinate multiple agencies. Our deep industry expertise across 30+ projects ensures solutions tailored to your specific market.',
+        faq2_q: 'What makes Flamelix different from other agencies?',
+        faq2_a: 'We are not a traditional marketing agency. We form a dedicated team embedded in your processes — covering research, CX, strategy, lead generation, sales materials, CRM, and end-to-end analytics. We focus on full-lifecycle support tied directly to your sales targets, not vanity metrics.',
+        faq3_q: 'What industries do you work with?',
+        faq3_a: 'We specialize in real estate development — residential, commercial, and international properties. Our clients include top developers like MR Group, Knight Frank, and ENKA, as well as proptech companies and international real estate platforms across 5 countries.',
+        faq4_q: 'Do we need an in-house marketing team to work with you?',
+        faq4_a: 'Not at all. We function as your complete marketing department — handling everything from strategy to implementation. If you already have a team, we integrate seamlessly, filling gaps and amplifying capabilities. Either way, you get a full-cycle solution.',
+        faq5_q: 'How do you measure success?',
+        faq5_a: 'Everything is tied to your business goals. We set up end-to-end analytics tracking the full journey — from advertising spend to leads, funnel stages, and closed deals in CRM. You see exactly how every ruble or dollar of your marketing budget translates into sales.',
+
         // Contact
-        contact_label: 'Contact',
+        contact_label: 'CONTACT',
         contact_title: "Let's build your<br>marketing system",
         contact_desc: "Tell us about your project, and we'll propose the optimal solution to hit your sales targets",
         form_name: 'Name',
@@ -98,11 +125,11 @@ const translations = {
         form_project: 'About your project',
         form_project_ph: 'Tell us about your project and goals...',
         form_submit: 'Send Request',
-        form_sent: 'Sent ✓',
+        form_sent: 'Sent',
 
         // Footer
         footer_desc: 'Marketing & IT Team for Real Estate Developers',
-        footer_copy: '© 2025 Flamelix. All rights reserved.'
+        footer_copy: '\u00a9 2025 Flamelix. All rights reserved.'
     },
     ru: {
         // Page
@@ -117,41 +144,58 @@ const translations = {
 
         // Hero
         hero_badge: 'Маркетинг и IT для девелоперов недвижимости',
-        hero_title: 'Помогаем достигать<br><span class="gradient-text">планов продаж</span>,<br>выстраивая data-driven<br>маркетинговые системы',
+        hero_title: 'Помогаем достигать<br><span class="gradient-text">планов продаж</span>,<br>выстраивая data-driven<br>маркетинговые системы.',
         hero_subtitle: 'Работаем на всех этапах: от анализа рынка до реализации стратегии — через исследования, создание маркетинговых материалов, лидогенерацию, внедрение CRM и настройку сквозной аналитики.',
         hero_cta: 'Начать проект',
-        hero_cta2: 'Наш опыт',
+        hero_cta2: 'Наши услуги',
         metric_projects: 'Проектов реализовано',
         metric_years: 'Лет опыта',
         metric_countries: 'Стран',
 
+        // Trusted By
+        trusted_label: 'НАМ ДОВЕРЯЮТ',
+
+        // Challenges
+        challenges_intro: 'Мы понимаем вызовы, с которыми вы сталкиваетесь. Именно поэтому ваш путь к результату начинается здесь.',
+        ch1: 'Маркетинговые бюджеты без измеримого возврата инвестиций.',
+        ch2: 'Разрозненные команды, работающие над стратегией, креативом и аналитикой в отрыве друг от друга.',
+        ch3: 'Планы продаж не выполняются из-за отсутствия data-driven подхода.',
+        ch4: 'Технологические инвестиции, которые увеличивают затраты вместо роста.',
+
         // Services
-        services_label: 'Что мы делаем',
-        services_title: 'Готовая команда, которая берёт<br>на себя всю вашу маркетинговую систему',
+        services_label: 'НАШИ УСЛУГИ',
+        services_title: 'Компетенции',
+        services_desc: 'Готовая команда, которая берёт на себя всю вашу маркетинговую систему. Мы создаём решения, которые решают реальные бизнес-задачи и приносят измеримый результат.',
         s1_title: 'Исследования',
         s1_desc: 'Анализ рынка, глубинные интервью с клиентами, аудит внутренних процессов, оценка потенциала рекламных каналов',
-        s1_t1: 'Анализ рынка', s1_t2: 'Интервью', s1_t3: 'Аудит', s1_t4: 'Оценка каналов',
         s2_title: 'Customer Experience',
         s2_desc: 'Внедряем человекоцентричный подход — учимся слушать клиентов. Применяем к разработке продукта, стратегиям, IT-инфраструктуре и командным процессам',
-        s2_t1: 'CX-стратегия', s2_t2: 'Человекоцентричность', s2_t3: 'Карта пути клиента', s2_t4: 'Конверсия',
         s3_title: 'Маркетинговая стратегия',
         s3_desc: 'Разрабатываем и реализуем стратегии, увязанные с планами продаж — от позиционирования до оптимизации медиа-микса',
-        s3_t1: 'Стратегия', s3_t2: 'Планы продаж', s3_t3: 'Позиционирование', s3_t4: 'Медиа-микс',
         s4_title: 'Лидогенерация',
         s4_desc: 'Масштабируемое привлечение клиентов через performance-рекламу и интеграцию с онлайн и оффлайн мероприятиями',
-        s4_t2: 'Реклама', s4_t3: 'Мероприятия', s4_t4: 'Масштабируемый рост',
         s5_title: 'Продающие материалы',
         s5_desc: 'Создаём сайты, лендинги, презентации, креативы и рекламные материалы, которые конвертируют',
-        s5_t1: 'Сайты', s5_t2: 'Лендинги', s5_t3: 'Презентации', s5_t4: 'Креативы',
         s6_title: 'Сквозная аналитика',
         s6_desc: 'Отслеживаем путь от рекламных вложений до лидов, стадий воронки и закрытых сделок в CRM',
-        s6_t1: 'Аналитика', s6_t3: 'Атрибуция', s6_t4: 'Отслеживание ROI',
         s7_title: 'Партнёрский маркетинг',
         s7_desc: 'Выстраиваем отношения с агентствами недвижимости: создаём системы взаимоотношений, готовим партнёрские материалы и проводим обучение',
-        s7_t1: 'Работа с агентствами', s7_t2: 'Партнёрские материалы', s7_t3: 'Обучение', s7_t4: 'Ко-маркетинг',
+
+        // Process
+        process_label: 'НАШ ПОДХОД',
+        process_title: 'Как мы работаем',
+        process_desc: 'Мы формируем готовую команду, которая берёт на себя полную ответственность за внедрение вашей маркетинговой системы.',
+        step1_title: 'Исследование',
+        step1_desc: 'Начинаем с понимания ваших целей, аудитории и вызовов. Глубокое исследование рынка, интервью с клиентами и внутренний аудит выявляют возможности и инсайты.',
+        step2_title: 'Стратегия',
+        step2_desc: 'Разрабатываем комплексную маркетинговую стратегию, привязанную к вашим планам продаж. От позиционирования и медиа-микса до архитектуры CRM и настройки аналитики.',
+        step3_title: 'Реализация',
+        step3_desc: 'Создаём и запускаем — материалы, рекламу, CRM, сквозную аналитику. Полная ответственность с первого дня.',
+        step4_title: 'Оптимизация',
+        step4_desc: 'Отслеживаем результаты, улучшаем эффективность и масштабируем то, что работает. Непрерывное улучшение на основе данных.',
 
         // Cases
-        cases_label: 'Опыт',
+        cases_label: 'ОПЫТ',
         cases_title: 'Подтверждённый опыт<br>с лидерами отрасли',
         c1_badge: 'Customer Experience и IT',
         c1_desc: 'Управляли CX-проектами, внедряли изменения для роста конверсий на каждом этапе пути клиента. Трансформация IT-инфраструктуры: CRM, ЭДО, онлайн-покупка квартир, сайт-маркетплейс, мобильное приложение.',
@@ -168,18 +212,15 @@ const translations = {
         cl4_desc: 'Построили отдел маркетинга и лидогенерацию в 5 странах',
         cl5_desc: 'Сквозная аналитика и data-driven маркетинг для ТОП-20 девелоперов России',
 
-        // Insight
-        insight_quote: 'Мы формируем готовую команду, которая берёт на себя полную ответственность за внедрение вашей маркетинговой системы — от исследований и стратегии до реализации и аналитики',
-        insight_author: '— Подход Flamelix',
-
         // CTA Band
         cta_title: 'Готовы выполнить планы продаж?',
         cta_subtitle: 'Обсудим ваш проект и построим индивидуальную маркетинговую систему',
         cta_btn: 'Связаться',
 
         // Team
-        team_label: 'Команда',
-        team_title: 'Экспертная команда<br>с глубоким знанием отрасли',
+        team_label: 'КОМАНДА',
+        team_title: 'Партнёр, которого вы<br>искали',
+        team_desc: 'Мы объединяем богатый опыт, чтобы маркетинг работал. Партнёрство с девелоперами для создания решений, отвечающих самым высоким стандартам.',
         t1_name: 'Родион Ангаев', t1_role: 'Growth-стратегии и data-driven маркетинг',
         t1_desc: 'Выстраивает маркетинговые системы и управляет KPI лидогенерации. Эксперт в партнёрском маркетинге.',
         t2_name: 'Илья Волгин', t2_role: 'Customer Experience и цифровая трансформация',
@@ -189,8 +230,21 @@ const translations = {
         t4_name: 'Андрей Соколов', t4_role: 'Аналитика и автоматизация',
         t4_desc: 'Системная и сквозная аналитика, автоматизация маркетинга и продаж. Строит отчётность от рекламных вложений до закрытых сделок в CRM.',
 
+        // FAQ
+        faq_title: 'Часто задаваемые вопросы',
+        faq1_q: 'Почему Flamelix?',
+        faq1_a: 'Flamelix специализируется на достижении измеримых результатов для девелоперов недвижимости. Мы предоставляем полную маркетинговую команду — от исследований и стратегии до реализации и аналитики — устраняя необходимость координировать несколько агентств. Наш глубокий отраслевой опыт в 30+ проектах гарантирует решения, адаптированные под ваш рынок.',
+        faq2_q: 'Чем Flamelix отличается от других агентств?',
+        faq2_a: 'Мы не традиционное маркетинговое агентство. Мы формируем выделенную команду, встроенную в ваши процессы — покрывая исследования, CX, стратегию, лидогенерацию, продающие материалы, CRM и сквозную аналитику. Мы фокусируемся на полном жизненном цикле, привязанном к вашим планам продаж.',
+        faq3_q: 'С какими отраслями вы работаете?',
+        faq3_a: 'Мы специализируемся на девелопменте недвижимости — жилой, коммерческой и международной. Наши клиенты включают ведущих девелоперов, таких как MR Group, Knight Frank и ENKA, а также proptech-компании и международные платформы в 5 странах.',
+        faq4_q: 'Нужна ли нам собственная маркетинговая команда для работы с вами?',
+        faq4_a: 'Совсем нет. Мы выполняем функцию вашего полноценного маркетингового отдела — от стратегии до реализации. Если у вас уже есть команда, мы бесшовно интегрируемся, заполняя пробелы и усиливая возможности.',
+        faq5_q: 'Как вы измеряете успех?',
+        faq5_a: 'Всё привязано к вашим бизнес-целям. Мы настраиваем сквозную аналитику, отслеживая весь путь — от рекламных вложений до лидов, стадий воронки и закрытых сделок в CRM. Вы видите, как каждый рубль маркетингового бюджета превращается в продажи.',
+
         // Contact
-        contact_label: 'Контакты',
+        contact_label: 'КОНТАКТЫ',
         contact_title: 'Давайте построим вашу<br>маркетинговую систему',
         contact_desc: 'Расскажите о вашем проекте, и мы предложим оптимальное решение для достижения планов продаж',
         form_name: 'Имя',
@@ -198,11 +252,11 @@ const translations = {
         form_project: 'О проекте',
         form_project_ph: 'Расскажите о вашем проекте и целях...',
         form_submit: 'Отправить заявку',
-        form_sent: 'Отправлено ✓',
+        form_sent: 'Отправлено',
 
         // Footer
         footer_desc: 'Маркетинг и IT для девелоперов недвижимости',
-        footer_copy: '© 2025 Flamelix. Все права защищены.'
+        footer_copy: '\u00a9 2025 Flamelix. Все права защищены.'
     }
 };
 
@@ -252,132 +306,6 @@ function setLanguage(lang) {
     try { localStorage.setItem('flamelix-lang', lang); } catch(e) {}
 }
 
-// ====== Particle Network Canvas ======
-class ParticleNetwork {
-    constructor(canvas) {
-        this.canvas = canvas;
-        this.ctx = canvas.getContext('2d');
-        this.particles = [];
-        this.mouse = { x: null, y: null, radius: 150 };
-        this.numParticles = 80;
-        this.maxDistance = 150;
-        this.isVisible = true;
-        this.animationId = null;
-
-        this.resize();
-        this.init();
-        this.bindEvents();
-        this.animate();
-    }
-
-    resize() {
-        this.canvas.width = window.innerWidth;
-        this.canvas.height = window.innerHeight;
-    }
-
-    init() {
-        this.particles = [];
-        for (let i = 0; i < this.numParticles; i++) {
-            this.particles.push({
-                x: Math.random() * this.canvas.width,
-                y: Math.random() * this.canvas.height,
-                vx: (Math.random() - 0.5) * 0.5,
-                vy: (Math.random() - 0.5) * 0.5,
-                size: Math.random() * 1.5 + 0.5,
-                opacity: Math.random() * 0.5 + 0.1,
-            });
-        }
-    }
-
-    bindEvents() {
-        let resizeTimer;
-        window.addEventListener('resize', () => {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(() => {
-                this.resize();
-                this.init();
-            }, 200);
-        });
-
-        window.addEventListener('mousemove', (e) => {
-            this.mouse.x = e.clientX;
-            this.mouse.y = e.clientY;
-        });
-
-        window.addEventListener('mouseout', () => {
-            this.mouse.x = null;
-            this.mouse.y = null;
-        });
-
-        // Pause animation when tab is hidden
-        document.addEventListener('visibilitychange', () => {
-            if (document.hidden) {
-                this.isVisible = false;
-                if (this.animationId) {
-                    cancelAnimationFrame(this.animationId);
-                    this.animationId = null;
-                }
-            } else {
-                this.isVisible = true;
-                if (!this.animationId) {
-                    this.animate();
-                }
-            }
-        });
-    }
-
-    animate() {
-        if (!this.isVisible) return;
-
-        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-
-        for (let i = 0; i < this.particles.length; i++) {
-            const p = this.particles[i];
-
-            p.x += p.vx;
-            p.y += p.vy;
-
-            if (p.x < 0 || p.x > this.canvas.width) p.vx *= -1;
-            if (p.y < 0 || p.y > this.canvas.height) p.vy *= -1;
-
-            if (this.mouse.x && this.mouse.y) {
-                const dx = p.x - this.mouse.x;
-                const dy = p.y - this.mouse.y;
-                const dist = Math.sqrt(dx * dx + dy * dy);
-                if (dist < this.mouse.radius) {
-                    const force = (this.mouse.radius - dist) / this.mouse.radius;
-                    p.x += dx * force * 0.02;
-                    p.y += dy * force * 0.02;
-                }
-            }
-
-            this.ctx.beginPath();
-            this.ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-            this.ctx.fillStyle = `rgba(96, 165, 250, ${p.opacity})`;
-            this.ctx.fill();
-
-            for (let j = i + 1; j < this.particles.length; j++) {
-                const p2 = this.particles[j];
-                const dx = p.x - p2.x;
-                const dy = p.y - p2.y;
-                const dist = Math.sqrt(dx * dx + dy * dy);
-
-                if (dist < this.maxDistance) {
-                    const alpha = (1 - dist / this.maxDistance) * 0.15;
-                    this.ctx.beginPath();
-                    this.ctx.moveTo(p.x, p.y);
-                    this.ctx.lineTo(p2.x, p2.y);
-                    this.ctx.strokeStyle = `rgba(96, 165, 250, ${alpha})`;
-                    this.ctx.lineWidth = 0.5;
-                    this.ctx.stroke();
-                }
-            }
-        }
-
-        this.animationId = requestAnimationFrame(() => this.animate());
-    }
-}
-
 // ====== Throttle utility ======
 function throttle(fn, delay) {
     let lastCall = 0;
@@ -392,16 +320,12 @@ function throttle(fn, delay) {
 
 // ====== Initialize ======
 document.addEventListener('DOMContentLoaded', () => {
-    const canvas = document.getElementById('particleCanvas');
-    if (canvas) {
-        new ParticleNetwork(canvas);
-    }
-
     initLanguageSwitcher();
     initNavigation();
     initScrollAnimations();
     initMetricCounters();
     initContactForm();
+    initFAQ();
 });
 
 // ====== Language Switcher ======
@@ -511,7 +435,6 @@ function initScrollAnimations() {
         aosElements.forEach(el => el.classList.add('visible'));
     }, 4000);
 
-    // Use a very low threshold so elements appear as soon as they peek into view
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -520,8 +443,8 @@ function initScrollAnimations() {
             }
         });
     }, {
-        threshold: 0.02,
-        rootMargin: '0px 0px 0px 0px'
+        threshold: 0.05,
+        rootMargin: '0px 0px -40px 0px'
     });
 
     aosElements.forEach((el) => {
@@ -581,6 +504,32 @@ function animateMetrics() {
     });
 }
 
+// ====== FAQ Accordion ======
+function initFAQ() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const btn = item.querySelector('.faq-question');
+        if (!btn) return;
+
+        btn.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            // Close all
+            faqItems.forEach(other => {
+                other.classList.remove('active');
+                const otherBtn = other.querySelector('.faq-question');
+                if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+            });
+
+            // Toggle current
+            if (!isActive) {
+                item.classList.add('active');
+                btn.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+}
+
 // ====== Contact Form ======
 function initContactForm() {
     const form = document.querySelector('.contact-form');
@@ -590,7 +539,7 @@ function initContactForm() {
 
             const btn = form.querySelector('button[type="submit"]');
             const originalHTML = btn.innerHTML;
-            const sentText = translations[currentLang]?.form_sent || 'Sent ✓';
+            const sentText = translations[currentLang]?.form_sent || 'Sent';
 
             btn.innerHTML = `<span>${sentText}</span>`;
             btn.style.background = '#22c55e';
