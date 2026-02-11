@@ -356,7 +356,8 @@ body {
     padding-top: 3rem;
     border-top: 1px solid var(--border);
     justify-content: center;
-    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
 }
 
 .stat {
