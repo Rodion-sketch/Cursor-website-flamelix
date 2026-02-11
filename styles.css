@@ -420,6 +420,8 @@ body {
     display: flex;
     align-items: center;
     width: max-content;
+    animation: marquee 30s linear infinite;
+    will-change: transform;
 }
 
 .marquee-scroll {
@@ -427,8 +429,6 @@ body {
     align-items: center;
     gap: 3.5rem;
     padding-right: 3.5rem;
-    animation: marquee 35s linear infinite;
-    will-change: transform;
 }
 
 .cl-name {
@@ -442,38 +442,7 @@ body {
 
 @keyframes marquee {
     0% { transform: translate3d(0, 0, 0); }
-    100% { transform: translate3d(-100%, 0, 0); }
-}
-
-/* ========================================
-   VALUE PROP (light section)
-   ======================================== */
-.value-prop {
-    background: var(--bg-light);
-    color: var(--text-dark);
-    padding: 7rem 0;
-}
-
-.value-content {
-    text-align: center;
-}
-
-.value-title {
-    font-family: var(--serif);
-    font-size: 2.8rem;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -0.5px;
-    color: var(--text-dark);
-    margin-bottom: 1.5rem;
-}
-
-.value-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--text-dark-secondary);
-    max-width: 600px;
-    margin: 0 auto;
+    100% { transform: translate3d(-50%, 0, 0); }
 }
 
 /* ========================================
@@ -578,14 +547,8 @@ body {
     color: var(--text-dark);
 }
 
-.process-header {
-    margin-bottom: 4rem;
-}
-
-.process .section-eyebrow { color: var(--accent); }
 .process .section-heading {
     color: var(--text-dark);
-    margin-bottom: 0;
 }
 
 .process-timeline {
@@ -851,10 +814,6 @@ body {
     padding: 8rem 0;
     background: var(--bg-light);
     color: var(--text-dark);
-}
-
-.testimonial-section .section-eyebrow {
-    color: var(--accent);
 }
 
 .testimonial-section .section-heading {
@@ -1333,7 +1292,7 @@ body {
    ======================================== */
 @media (max-width: 1024px) {
     .hero-title { font-size: 3.2rem; }
-    .section-heading, .value-title { font-size: 2.2rem; }
+    .section-heading { font-size: 2.2rem; }
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .case-featured { grid-template-columns: 1fr; }
     .case-duo { grid-template-columns: 1fr; }
@@ -1380,7 +1339,7 @@ body {
     .stat { padding: 0 1rem; }
     .stat-value { font-size: 2rem; }
 
-    .section-heading, .value-title { font-size: 1.8rem; }
+    .section-heading { font-size: 1.8rem; }
     .testimonial-card { padding: 2rem 1.5rem; }
     .testimonial-quote p { font-size: 0.9rem; }
 
@@ -1388,7 +1347,7 @@ body {
 
     .services, .cases, .team, .contact, .faq { padding: 5rem 0; }
     .process { padding: 5rem 0; }
-    .value-prop { padding: 5rem 0; }
+
 
     .services-grid { grid-template-columns: 1fr; }
     .process-step { grid-template-columns: 56px 1fr; gap: 1.25rem; }
@@ -1421,7 +1380,7 @@ body {
     .stat-value { font-size: 2.4rem; }
     .cta-box h2 { font-size: 1.4rem; }
     .cta-box { padding: 3.5rem 2rem; }
-    .section-heading, .value-title { font-size: 1.5rem; }
+    .section-heading { font-size: 1.5rem; }
     .case-featured-body { padding: 2rem; }
     .process-step { grid-template-columns: 44px 1fr; gap: 1rem; }
     .step-num { width: 36px; height: 36px; font-size: 0.72rem; }
