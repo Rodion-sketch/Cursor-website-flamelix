@@ -427,7 +427,7 @@ body {
     flex-shrink: 0;
     gap: 3.5rem;
     padding-right: 3.5rem;
-    animation: marquee 25s linear infinite;
+    animation: marquee 40s linear infinite;
     will-change: transform;
 }
 
