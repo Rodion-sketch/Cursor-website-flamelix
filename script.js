@@ -422,26 +422,43 @@ function initFAQ() {
 function initContactForm() {
     const form = document.querySelector('.contact-form');
     if (!form) return;
-    form.addEventListener('submit', e => {
+    form.addEventListener('submit', async e => {
         e.preventDefault();
         const btn = form.querySelector('button[type="submit"]');
         const orig = btn.innerHTML;
+        const sending = currentLang === 'ru' ? 'Отправка...' : 'Sending...';
         const sent = translations[currentLang]?.form_sent || 'Sent';
+        const errorMsg = currentLang === 'ru' ? 'Ошибка, попробуйте ещё раз' : 'Error, please try again';
 
-        btn.innerHTML = `<span>${sent}</span>`;
-        btn.style.background = '#22c55e';
+        btn.innerHTML = `<span>${sending}</span>`;
         btn.disabled = true;
 
-        setTimeout(() => {
-            btn.innerHTML = orig;
-            const sp = btn.querySelector('[data-i18n]');
-            if (sp) {
-                const k = sp.getAttribute('data-i18n');
-                sp.textContent = translations[currentLang]?.[k] || sp.textContent;
+        try {
+            const res = await fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            });
+            if (res.ok) {
+                btn.innerHTML = `<span>${sent}</span>`;
+                btn.style.background = '#22c55e';
+                form.reset();
+                setTimeout(() => {
+                    btn.innerHTML = orig;
+                    btn.style.background = '';
+                    btn.disabled = false;
+                }, 3000);
+            } else {
+                throw new Error('Form submission failed');
             }
-            btn.style.background = '';
-            btn.disabled = false;
-            form.reset();
-        }, 3000);
+        } catch {
+            btn.innerHTML = `<span>${errorMsg}</span>`;
+            btn.style.background = '#ef4444';
+            setTimeout(() => {
+                btn.innerHTML = orig;
+                btn.style.background = '';
+                btn.disabled = false;
+            }, 3000);
+        }
     });
 }
