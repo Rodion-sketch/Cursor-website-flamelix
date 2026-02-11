@@ -1,50 +1,41 @@
 /* ========================================
    FLAMELIX — Interactive Scripts
+   Claude-inspired edition
    ======================================== */
 
 // ====== Translations ======
 const translations = {
     en: {
-        // Page
         page_title: 'Flamelix — Marketing & IT Team for Real Estate Developers',
 
-        // Nav
         nav_services: 'Services',
         nav_experience: 'Experience',
         nav_approach: 'How We Work',
         nav_team: 'Team',
         nav_contact: 'Get in Touch',
 
-        // Hero
         hero_badge: 'Marketing & IT Team for Real Estate',
-        hero_title: 'We help achieve<br><span class="gradient-text">sales targets</span> by building<br>data-driven marketing systems.',
-        hero_subtitle: 'We work across all stages: from market analysis to strategy execution — through research, creating marketing materials, lead generation, CRM implementation, and end-to-end analytics setup.',
+        hero_title: 'We help achieve <em>sales targets</em> by building data\u2011driven marketing\u00a0systems',
+        hero_subtitle: 'From market analysis to strategy execution — research, marketing materials, lead generation, CRM, and end-to-end analytics.',
         hero_cta: 'Start a Project',
-        hero_cta2: 'Explore Our Services',
+        hero_cta2: 'Explore Services',
         metric_projects: 'Projects delivered',
         metric_years: 'Years of experience',
         metric_countries: 'Countries',
 
-        // Trusted By
-        trusted_label: 'TRUSTED BY',
+        trusted_label: 'Trusted by',
 
-        // Challenges
-        challenges_intro: 'We recognize the challenges you face. That is why your path to impact starts here.',
-        ch1: 'Marketing budgets without measurable return on investment.',
-        ch2: 'Disconnected teams handling strategy, creative, and analytics in silos.',
-        ch3: 'Sales targets missed due to lack of data-driven decision making.',
-        ch4: 'Technology investments that add cost instead of driving growth.',
+        value_title: 'A complete marketing team,<br>built around your sales goals',
+        value_text: "We don\u2019t sell services \u2014 we take ownership of your entire marketing system. From research to closed deals, one integrated team replaces the need for multiple agencies.",
 
-        // Services
-        services_label: 'OUR SERVICES',
-        services_title: 'Capabilities',
-        services_desc: 'A ready-made team that takes full ownership of your marketing system. We design and deliver solutions that solve real business challenges and create measurable impact.',
+        services_label: 'Services',
+        services_heading: 'What we do',
         s1_title: 'Research',
         s1_desc: 'Market analysis, in-depth customer interviews, internal process audits, advertising channel potential assessment',
         s2_title: 'Customer Experience',
-        s2_desc: 'We implement a human-centered approach — learning to listen to customers. Applied to product development, strategies, IT infrastructure, and team processes',
+        s2_desc: 'We implement a human-centered approach \u2014 learning to listen to customers. Applied to product development, strategies, IT infrastructure, and team processes',
         s3_title: 'Marketing Strategy',
-        s3_desc: 'We develop and execute strategies aligned with sales targets — from positioning to channel mix optimization',
+        s3_desc: 'We develop and execute strategies aligned with sales targets \u2014 from positioning to channel mix optimization',
         s4_title: 'Lead Generation',
         s4_desc: 'Scalable customer acquisition through performance advertising and integration with online and offline events',
         s5_title: 'Sales Materials',
@@ -54,46 +45,45 @@ const translations = {
         s7_title: 'Partner Marketing',
         s7_desc: 'We build relationships with real estate agencies: create relationship systems, prepare partner materials, and conduct training',
 
-        // Process
-        process_label: 'OUR APPROACH',
-        process_title: 'How we work',
-        process_desc: 'We form a ready-made team that takes full ownership of implementing your marketing system.',
+        process_label: 'Approach',
+        process_heading: 'How we work',
         step1_title: 'Discover',
         step1_desc: 'We start by understanding your goals, audience, and challenges. Deep market research, customer interviews, and internal audits reveal opportunities and surface actionable insights.',
         step2_title: 'Strategize',
         step2_desc: 'We develop a comprehensive marketing strategy aligned with your sales targets. From positioning and channel mix to CRM architecture and analytics setup.',
         step3_title: 'Execute',
-        step3_desc: 'We build and launch — creating materials, setting up advertising, implementing CRM, and configuring end-to-end analytics. Full ownership from day one.',
+        step3_desc: 'We build and launch \u2014 creating materials, setting up advertising, implementing CRM, and configuring end-to-end analytics. Full ownership from day one.',
         step4_title: 'Optimize',
-        step4_desc: 'We track results, refine performance, and scale what works. Continuous improvement driven by data — from ad investments to closed deals in CRM.',
+        step4_desc: 'We track results, refine performance, and scale what works. Continuous improvement driven by data \u2014 from ad investments to closed deals in CRM.',
 
-        // Cases
-        cases_label: 'EXPERIENCE',
-        cases_title: 'Proven track record with<br>industry leaders',
+        cases_label: 'Experience',
+        cases_heading: 'Proven track record with industry\u00a0leaders',
         c1_badge: 'Customer Experience & IT',
         c1_desc: 'Managed Customer Experience projects, implemented changes to increase conversions at every stage of the customer journey. IT infrastructure transformation: CRM, electronic document management, online apartment purchases, marketplace website, mobile app.',
         c1_m1: 'Transformation', c1_m2: 'Implementation', c1_m3: 'Development',
         c2_badge: 'SMM & Research',
-        c2_desc: "Audience research and social media communication strategy for Yandex's new division",
+        c2_desc: "Audience research and social media communication strategy for Yandex\u2019s new division",
         c2_m1: 'Strategy',
         c3_badge: 'Digital Marketing',
         c3_desc: 'Doubled sales of residential, commercial, and international real estate in one year. Built profitable digital marketing',
         c3_m1: 'Sales Growth',
         cl1_desc: 'From brand creation to delivering 3,500 workspaces',
         cl2_desc: 'Sold a villa complex in 6 months',
-        cl3_desc: "Rebranded Bali's largest developer",
+        cl3_desc: "Rebranded Bali\u2019s largest developer",
         cl4_desc: 'Built marketing department and lead generation across 5 countries',
         cl5_desc: 'End-to-end analytics and data-driven marketing for TOP-20 Russian developers',
 
-        // CTA Band
+        testimonial_label: 'Testimonials',
+        testimonial_1_text: 'Flamelix\u2019s systematic approach and analytical precision played a key role in Flexity\u2019s growth. Over three years of partnership their team built us a modern marketing infrastructure, high\u2011performing campaigns, and end\u2011to\u2011end measurable results.',
+        testimonial_1_name: 'Sarper Altunyuva',
+        testimonial_1_role: 'CEO, Flexity (ENKA)',
+
         cta_title: 'Ready to hit your sales targets?',
-        cta_subtitle: "Let's discuss your project and build a custom marketing system",
+        cta_subtitle: "Let\u2019s discuss your project and build a custom marketing system",
         cta_btn: 'Get in Touch',
 
-        // Team
-        team_label: 'TEAM',
-        team_title: 'The partner you have<br>been looking for',
-        team_desc: 'We bring together a wealth of experience to make marketing work. Partnering with developers to design bespoke solutions that meet their highest standards.',
+        team_label: 'Team',
+        team_heading: 'The partner you have been\u00a0looking\u00a0for',
         t1_name: 'Rodion Angaev', t1_role: 'Growth Strategies & Data-Driven Marketing',
         t1_desc: 'Builds marketing systems and manages lead generation KPIs. Partner marketing expert.',
         t2_name: 'Ilya Volgin', t2_role: 'Customer Experience & Digital Transformation',
@@ -103,23 +93,21 @@ const translations = {
         t4_name: 'Andrey Sokolov', t4_role: 'Analytics & Automation',
         t4_desc: 'System and end-to-end analytics, marketing and sales automation. Builds reporting from ad investments to closed deals in CRM.',
 
-        // FAQ
         faq_title: 'Frequently Asked Questions',
         faq1_q: 'Why choose Flamelix?',
-        faq1_a: 'Flamelix is dedicated to delivering measurable results for real estate developers. We provide a complete marketing team — from research and strategy to execution and analytics — eliminating the need to coordinate multiple agencies. Our deep industry expertise across 30+ projects ensures solutions tailored to your specific market.',
+        faq1_a: 'Flamelix is dedicated to delivering measurable results for real estate developers. We provide a complete marketing team \u2014 from research and strategy to execution and analytics \u2014 eliminating the need to coordinate multiple agencies. Our deep industry expertise across 30+ projects ensures solutions tailored to your specific market.',
         faq2_q: 'What makes Flamelix different from other agencies?',
-        faq2_a: 'We are not a traditional marketing agency. We form a dedicated team embedded in your processes — covering research, CX, strategy, lead generation, sales materials, CRM, and end-to-end analytics. We focus on full-lifecycle support tied directly to your sales targets, not vanity metrics.',
+        faq2_a: 'We are not a traditional marketing agency. We form a dedicated team embedded in your processes \u2014 covering research, CX, strategy, lead generation, sales materials, CRM, and end-to-end analytics. We focus on full-lifecycle support tied directly to your sales targets, not vanity metrics.',
         faq3_q: 'What industries do you work with?',
-        faq3_a: 'We specialize in real estate development — residential, commercial, and international properties. Our clients include top developers like MR Group, Knight Frank, and ENKA, as well as proptech companies and international real estate platforms across 5 countries.',
-        faq4_q: 'Do we need an in-house marketing team to work with you?',
-        faq4_a: 'Not at all. We function as your complete marketing department — handling everything from strategy to implementation. If you already have a team, we integrate seamlessly, filling gaps and amplifying capabilities. Either way, you get a full-cycle solution.',
+        faq3_a: 'We specialize in real estate development \u2014 residential, commercial, and international properties. Our clients include top developers like MR Group, Knight Frank, and ENKA, as well as proptech companies and international real estate platforms across 5 countries.',
+        faq4_q: 'Do we need an in-house marketing team?',
+        faq4_a: 'Not at all. We function as your complete marketing department \u2014 handling everything from strategy to implementation. If you already have a team, we integrate seamlessly, filling gaps and amplifying capabilities. Either way, you get a full-cycle solution.',
         faq5_q: 'How do you measure success?',
-        faq5_a: 'Everything is tied to your business goals. We set up end-to-end analytics tracking the full journey — from advertising spend to leads, funnel stages, and closed deals in CRM. You see exactly how every ruble or dollar of your marketing budget translates into sales.',
+        faq5_a: 'Everything is tied to your business goals. We set up end-to-end analytics tracking the full journey \u2014 from advertising spend to leads, funnel stages, and closed deals in CRM. You see exactly how every ruble or dollar of your marketing budget translates into sales.',
 
-        // Contact
-        contact_label: 'CONTACT',
-        contact_title: "Let's build your<br>marketing system",
-        contact_desc: "Tell us about your project, and we'll propose the optimal solution to hit your sales targets",
+        contact_label: 'Contact',
+        contact_heading: "Let\u2019s build your marketing\u00a0system",
+        contact_desc: "Tell us about your project, and we\u2019ll propose the optimal solution to hit your sales targets",
         form_name: 'Name',
         form_name_ph: 'Your name',
         form_project: 'About your project',
@@ -127,136 +115,121 @@ const translations = {
         form_submit: 'Send Request',
         form_sent: 'Sent',
 
-        // Footer
         footer_desc: 'Marketing & IT Team for Real Estate Developers',
-        footer_copy: '\u00a9 2025 Flamelix. All rights reserved.'
+        footer_copy: '\u00a9 2026 Flamelix. All rights reserved.'
     },
     ru: {
-        // Page
-        page_title: 'Flamelix — Маркетинг и IT для девелоперов недвижимости',
+        page_title: 'Flamelix \u2014 \u041c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433 \u0438 IT \u0434\u043b\u044f \u0434\u0435\u0432\u0435\u043b\u043e\u043f\u0435\u0440\u043e\u0432 \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u0438',
 
-        // Nav
-        nav_services: 'Услуги',
-        nav_experience: 'Опыт',
-        nav_approach: 'Подход',
-        nav_team: 'Команда',
-        nav_contact: 'Связаться',
+        nav_services: '\u0423\u0441\u043b\u0443\u0433\u0438',
+        nav_experience: '\u041e\u043f\u044b\u0442',
+        nav_approach: '\u041f\u043e\u0434\u0445\u043e\u0434',
+        nav_team: '\u041a\u043e\u043c\u0430\u043d\u0434\u0430',
+        nav_contact: '\u0421\u0432\u044f\u0437\u0430\u0442\u044c\u0441\u044f',
 
-        // Hero
-        hero_badge: 'Маркетинг и IT для девелоперов недвижимости',
-        hero_title: 'Помогаем достигать<br><span class="gradient-text">планов продаж</span>,<br>выстраивая data-driven<br>маркетинговые системы.',
-        hero_subtitle: 'Работаем на всех этапах: от анализа рынка до реализации стратегии — через исследования, создание маркетинговых материалов, лидогенерацию, внедрение CRM и настройку сквозной аналитики.',
-        hero_cta: 'Начать проект',
-        hero_cta2: 'Наши услуги',
-        metric_projects: 'Проектов реализовано',
-        metric_years: 'Лет опыта',
-        metric_countries: 'Стран',
+        hero_badge: '\u041c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433 \u0438 IT \u0434\u043b\u044f \u0434\u0435\u0432\u0435\u043b\u043e\u043f\u0435\u0440\u043e\u0432 \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u0438',
+        hero_title: '\u041f\u043e\u043c\u043e\u0433\u0430\u0435\u043c \u0434\u043e\u0441\u0442\u0438\u0433\u0430\u0442\u044c <em>\u043f\u043b\u0430\u043d\u043e\u0432 \u043f\u0440\u043e\u0434\u0430\u0436</em>, \u0432\u044b\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u044f data\u2011driven \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u044b\u0435\u00a0\u0441\u0438\u0441\u0442\u0435\u043c\u044b',
+        hero_subtitle: '\u041e\u0442 \u0430\u043d\u0430\u043b\u0438\u0437\u0430 \u0440\u044b\u043d\u043a\u0430 \u0434\u043e \u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0438 \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u0438 \u2014 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f, \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u044b\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b, \u043b\u0438\u0434\u043e\u0433\u0435\u043d\u0435\u0440\u0430\u0446\u0438\u044f, CRM \u0438 \u0441\u043a\u0432\u043e\u0437\u043d\u0430\u044f \u0430\u043d\u0430\u043b\u0438\u0442\u0438\u043a\u0430.',
+        hero_cta: '\u041d\u0430\u0447\u0430\u0442\u044c \u043f\u0440\u043e\u0435\u043a\u0442',
+        hero_cta2: '\u041d\u0430\u0448\u0438 \u0443\u0441\u043b\u0443\u0433\u0438',
+        metric_projects: '\u041f\u0440\u043e\u0435\u043a\u0442\u043e\u0432 \u0440\u0435\u0430\u043b\u0438\u0437\u043e\u0432\u0430\u043d\u043e',
+        metric_years: '\u041b\u0435\u0442 \u043e\u043f\u044b\u0442\u0430',
+        metric_countries: '\u0421\u0442\u0440\u0430\u043d',
 
-        // Trusted By
-        trusted_label: 'НАМ ДОВЕРЯЮТ',
+        trusted_label: '\u041d\u0430\u043c \u0434\u043e\u0432\u0435\u0440\u044f\u044e\u0442',
 
-        // Challenges
-        challenges_intro: 'Мы понимаем вызовы, с которыми вы сталкиваетесь. Именно поэтому ваш путь к результату начинается здесь.',
-        ch1: 'Маркетинговые бюджеты без измеримого возврата инвестиций.',
-        ch2: 'Разрозненные команды, работающие над стратегией, креативом и аналитикой в отрыве друг от друга.',
-        ch3: 'Планы продаж не выполняются из-за отсутствия data-driven подхода.',
-        ch4: 'Технологические инвестиции, которые увеличивают затраты вместо роста.',
+        value_title: '\u041f\u043e\u043b\u043d\u043e\u0446\u0435\u043d\u043d\u0430\u044f \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u0430\u044f \u043a\u043e\u043c\u0430\u043d\u0434\u0430,<br>\u043f\u043e\u0441\u0442\u0440\u043e\u0435\u043d\u043d\u0430\u044f \u0432\u043e\u043a\u0440\u0443\u0433 \u0432\u0430\u0448\u0438\u0445 \u043f\u043b\u0430\u043d\u043e\u0432 \u043f\u0440\u043e\u0434\u0430\u0436',
+        value_text: '\u041c\u044b \u043d\u0435 \u043f\u0440\u043e\u0434\u0430\u0451\u043c \u0443\u0441\u043b\u0443\u0433\u0438 \u2014 \u043c\u044b \u0431\u0435\u0440\u0451\u043c \u043d\u0430 \u0441\u0435\u0431\u044f \u0432\u0441\u044e \u0432\u0430\u0448\u0443 \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u0443\u044e \u0441\u0438\u0441\u0442\u0435\u043c\u0443. \u041e\u0442 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0439 \u0434\u043e \u0437\u0430\u043a\u0440\u044b\u0442\u044b\u0445 \u0441\u0434\u0435\u043b\u043e\u043a \u2014 \u043e\u0434\u043d\u0430 \u0438\u043d\u0442\u0435\u0433\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u0430\u044f \u043a\u043e\u043c\u0430\u043d\u0434\u0430 \u0432\u043c\u0435\u0441\u0442\u043e \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u0438\u0445 \u0430\u0433\u0435\u043d\u0442\u0441\u0442\u0432.',
 
-        // Services
-        services_label: 'НАШИ УСЛУГИ',
-        services_title: 'Компетенции',
-        services_desc: 'Готовая команда, которая берёт на себя всю вашу маркетинговую систему. Мы создаём решения, которые решают реальные бизнес-задачи и приносят измеримый результат.',
-        s1_title: 'Исследования',
-        s1_desc: 'Анализ рынка, глубинные интервью с клиентами, аудит внутренних процессов, оценка потенциала рекламных каналов',
+        services_label: '\u0423\u0441\u043b\u0443\u0433\u0438',
+        services_heading: '\u0427\u0442\u043e \u043c\u044b \u0434\u0435\u043b\u0430\u0435\u043c',
+        s1_title: '\u0418\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f',
+        s1_desc: '\u0410\u043d\u0430\u043b\u0438\u0437 \u0440\u044b\u043d\u043a\u0430, \u0433\u043b\u0443\u0431\u0438\u043d\u043d\u044b\u0435 \u0438\u043d\u0442\u0435\u0440\u0432\u044c\u044e \u0441 \u043a\u043b\u0438\u0435\u043d\u0442\u0430\u043c\u0438, \u0430\u0443\u0434\u0438\u0442 \u0432\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u0438\u0445 \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u043e\u0432, \u043e\u0446\u0435\u043d\u043a\u0430 \u043f\u043e\u0442\u0435\u043d\u0446\u0438\u0430\u043b\u0430 \u0440\u0435\u043a\u043b\u0430\u043c\u043d\u044b\u0445 \u043a\u0430\u043d\u0430\u043b\u043e\u0432',
         s2_title: 'Customer Experience',
-        s2_desc: 'Внедряем человекоцентричный подход — учимся слушать клиентов. Применяем к разработке продукта, стратегиям, IT-инфраструктуре и командным процессам',
-        s3_title: 'Маркетинговая стратегия',
-        s3_desc: 'Разрабатываем и реализуем стратегии, увязанные с планами продаж — от позиционирования до оптимизации медиа-микса',
-        s4_title: 'Лидогенерация',
-        s4_desc: 'Масштабируемое привлечение клиентов через performance-рекламу и интеграцию с онлайн и оффлайн мероприятиями',
-        s5_title: 'Продающие материалы',
-        s5_desc: 'Создаём сайты, лендинги, презентации, креативы и рекламные материалы, которые конвертируют',
-        s6_title: 'Сквозная аналитика',
-        s6_desc: 'Отслеживаем путь от рекламных вложений до лидов, стадий воронки и закрытых сделок в CRM',
-        s7_title: 'Партнёрский маркетинг',
-        s7_desc: 'Выстраиваем отношения с агентствами недвижимости: создаём системы взаимоотношений, готовим партнёрские материалы и проводим обучение',
+        s2_desc: '\u0412\u043d\u0435\u0434\u0440\u044f\u0435\u043c \u0447\u0435\u043b\u043e\u0432\u0435\u043a\u043e\u0446\u0435\u043d\u0442\u0440\u0438\u0447\u043d\u044b\u0439 \u043f\u043e\u0434\u0445\u043e\u0434 \u2014 \u0443\u0447\u0438\u043c\u0441\u044f \u0441\u043b\u0443\u0448\u0430\u0442\u044c \u043a\u043b\u0438\u0435\u043d\u0442\u043e\u0432. \u041f\u0440\u0438\u043c\u0435\u043d\u044f\u0435\u043c \u043a \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0430, \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u044f\u043c, IT-\u0438\u043d\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0435 \u0438 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u044b\u043c \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u0430\u043c',
+        s3_title: '\u041c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u0430\u044f \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u044f',
+        s3_desc: '\u0420\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0435\u043c \u0438 \u0440\u0435\u0430\u043b\u0438\u0437\u0443\u0435\u043c \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u0438, \u0443\u0432\u044f\u0437\u0430\u043d\u043d\u044b\u0435 \u0441 \u043f\u043b\u0430\u043d\u0430\u043c\u0438 \u043f\u0440\u043e\u0434\u0430\u0436 \u2014 \u043e\u0442 \u043f\u043e\u0437\u0438\u0446\u0438\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f \u0434\u043e \u043e\u043f\u0442\u0438\u043c\u0438\u0437\u0430\u0446\u0438\u0438 \u043c\u0435\u0434\u0438\u0430-\u043c\u0438\u043a\u0441\u0430',
+        s4_title: '\u041b\u0438\u0434\u043e\u0433\u0435\u043d\u0435\u0440\u0430\u0446\u0438\u044f',
+        s4_desc: '\u041c\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u0443\u0435\u043c\u043e\u0435 \u043f\u0440\u0438\u0432\u043b\u0435\u0447\u0435\u043d\u0438\u0435 \u043a\u043b\u0438\u0435\u043d\u0442\u043e\u0432 \u0447\u0435\u0440\u0435\u0437 performance-\u0440\u0435\u043a\u043b\u0430\u043c\u0443 \u0438 \u0438\u043d\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044e \u0441 \u043e\u043d\u043b\u0430\u0439\u043d \u0438 \u043e\u0444\u0444\u043b\u0430\u0439\u043d \u043c\u0435\u0440\u043e\u043f\u0440\u0438\u044f\u0442\u0438\u044f\u043c\u0438',
+        s5_title: '\u041f\u0440\u043e\u0434\u0430\u044e\u0449\u0438\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b',
+        s5_desc: '\u0421\u043e\u0437\u0434\u0430\u0451\u043c \u0441\u0430\u0439\u0442\u044b, \u043b\u0435\u043d\u0434\u0438\u043d\u0433\u0438, \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u0438, \u043a\u0440\u0435\u0430\u0442\u0438\u0432\u044b \u0438 \u0440\u0435\u043a\u043b\u0430\u043c\u043d\u044b\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u043a\u043e\u043d\u0432\u0435\u0440\u0442\u0438\u0440\u0443\u044e\u0442',
+        s6_title: '\u0421\u043a\u0432\u043e\u0437\u043d\u0430\u044f \u0430\u043d\u0430\u043b\u0438\u0442\u0438\u043a\u0430',
+        s6_desc: '\u041e\u0442\u0441\u043b\u0435\u0436\u0438\u0432\u0430\u0435\u043c \u043f\u0443\u0442\u044c \u043e\u0442 \u0440\u0435\u043a\u043b\u0430\u043c\u043d\u044b\u0445 \u0432\u043b\u043e\u0436\u0435\u043d\u0438\u0439 \u0434\u043e \u043b\u0438\u0434\u043e\u0432, \u0441\u0442\u0430\u0434\u0438\u0439 \u0432\u043e\u0440\u043e\u043d\u043a\u0438 \u0438 \u0437\u0430\u043a\u0440\u044b\u0442\u044b\u0445 \u0441\u0434\u0435\u043b\u043e\u043a \u0432 CRM',
+        s7_title: '\u041f\u0430\u0440\u0442\u043d\u0451\u0440\u0441\u043a\u0438\u0439 \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433',
+        s7_desc: '\u0412\u044b\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0435\u043c \u043e\u0442\u043d\u043e\u0448\u0435\u043d\u0438\u044f \u0441 \u0430\u0433\u0435\u043d\u0442\u0441\u0442\u0432\u0430\u043c\u0438 \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u0438: \u0441\u043e\u0437\u0434\u0430\u0451\u043c \u0441\u0438\u0441\u0442\u0435\u043c\u044b \u0432\u0437\u0430\u0438\u043c\u043e\u043e\u0442\u043d\u043e\u0448\u0435\u043d\u0438\u0439, \u0433\u043e\u0442\u043e\u0432\u0438\u043c \u043f\u0430\u0440\u0442\u043d\u0451\u0440\u0441\u043a\u0438\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b \u0438 \u043f\u0440\u043e\u0432\u043e\u0434\u0438\u043c \u043e\u0431\u0443\u0447\u0435\u043d\u0438\u0435',
 
-        // Process
-        process_label: 'НАШ ПОДХОД',
-        process_title: 'Как мы работаем',
-        process_desc: 'Мы формируем готовую команду, которая берёт на себя полную ответственность за внедрение вашей маркетинговой системы.',
-        step1_title: 'Исследование',
-        step1_desc: 'Начинаем с понимания ваших целей, аудитории и вызовов. Глубокое исследование рынка, интервью с клиентами и внутренний аудит выявляют возможности и инсайты.',
-        step2_title: 'Стратегия',
-        step2_desc: 'Разрабатываем комплексную маркетинговую стратегию, привязанную к вашим планам продаж. От позиционирования и медиа-микса до архитектуры CRM и настройки аналитики.',
-        step3_title: 'Реализация',
-        step3_desc: 'Создаём и запускаем — материалы, рекламу, CRM, сквозную аналитику. Полная ответственность с первого дня.',
-        step4_title: 'Оптимизация',
-        step4_desc: 'Отслеживаем результаты, улучшаем эффективность и масштабируем то, что работает. Непрерывное улучшение на основе данных.',
+        process_label: '\u041f\u043e\u0434\u0445\u043e\u0434',
+        process_heading: '\u041a\u0430\u043a \u043c\u044b \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u043c',
+        step1_title: '\u0418\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0435',
+        step1_desc: '\u041d\u0430\u0447\u0438\u043d\u0430\u0435\u043c \u0441 \u043f\u043e\u043d\u0438\u043c\u0430\u043d\u0438\u044f \u0432\u0430\u0448\u0438\u0445 \u0446\u0435\u043b\u0435\u0439, \u0430\u0443\u0434\u0438\u0442\u043e\u0440\u0438\u0438 \u0438 \u0432\u044b\u0437\u043e\u0432\u043e\u0432. \u0413\u043b\u0443\u0431\u043e\u043a\u043e\u0435 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0435 \u0440\u044b\u043d\u043a\u0430, \u0438\u043d\u0442\u0435\u0440\u0432\u044c\u044e \u0441 \u043a\u043b\u0438\u0435\u043d\u0442\u0430\u043c\u0438 \u0438 \u0432\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u0438\u0439 \u0430\u0443\u0434\u0438\u0442 \u0432\u044b\u044f\u0432\u043b\u044f\u044e\u0442 \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u0438 \u0438 \u0438\u043d\u0441\u0430\u0439\u0442\u044b.',
+        step2_title: '\u0421\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u044f',
+        step2_desc: '\u0420\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0435\u043c \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0441\u043d\u0443\u044e \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u0443\u044e \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u044e, \u043f\u0440\u0438\u0432\u044f\u0437\u0430\u043d\u043d\u0443\u044e \u043a \u0432\u0430\u0448\u0438\u043c \u043f\u043b\u0430\u043d\u0430\u043c \u043f\u0440\u043e\u0434\u0430\u0436. \u041e\u0442 \u043f\u043e\u0437\u0438\u0446\u0438\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f \u0434\u043e \u0430\u0440\u0445\u0438\u0442\u0435\u043a\u0442\u0443\u0440\u044b CRM.',
+        step3_title: '\u0420\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f',
+        step3_desc: '\u0421\u043e\u0437\u0434\u0430\u0451\u043c \u0438 \u0437\u0430\u043f\u0443\u0441\u043a\u0430\u0435\u043c \u2014 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b, \u0440\u0435\u043a\u043b\u0430\u043c\u0443, CRM, \u0441\u043a\u0432\u043e\u0437\u043d\u0443\u044e \u0430\u043d\u0430\u043b\u0438\u0442\u0438\u043a\u0443. \u041f\u043e\u043b\u043d\u0430\u044f \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c \u0441 \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u0434\u043d\u044f.',
+        step4_title: '\u041e\u043f\u0442\u0438\u043c\u0438\u0437\u0430\u0446\u0438\u044f',
+        step4_desc: '\u041e\u0442\u0441\u043b\u0435\u0436\u0438\u0432\u0430\u0435\u043c \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b, \u0443\u043b\u0443\u0447\u0448\u0430\u0435\u043c \u044d\u0444\u0444\u0435\u043a\u0442\u0438\u0432\u043d\u043e\u0441\u0442\u044c \u0438 \u043c\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u0443\u0435\u043c \u0442\u043e, \u0447\u0442\u043e \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442. \u041d\u0435\u043f\u0440\u0435\u0440\u044b\u0432\u043d\u043e\u0435 \u0443\u043b\u0443\u0447\u0448\u0435\u043d\u0438\u0435 \u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0435 \u0434\u0430\u043d\u043d\u044b\u0445.',
 
-        // Cases
-        cases_label: 'ОПЫТ',
-        cases_title: 'Подтверждённый опыт<br>с лидерами отрасли',
-        c1_badge: 'Customer Experience и IT',
-        c1_desc: 'Управляли CX-проектами, внедряли изменения для роста конверсий на каждом этапе пути клиента. Трансформация IT-инфраструктуры: CRM, ЭДО, онлайн-покупка квартир, сайт-маркетплейс, мобильное приложение.',
-        c1_m1: 'Трансформация', c1_m2: 'Внедрение', c1_m3: 'Разработка',
-        c2_badge: 'SMM и исследования',
-        c2_desc: 'Исследование аудитории и стратегия коммуникации в социальных сетях для нового подразделения Яндекса',
-        c2_m1: 'Стратегия',
-        c3_badge: 'Digital-маркетинг',
-        c3_desc: 'Удвоили продажи жилой, коммерческой и зарубежной недвижимости за год. Построили прибыльный digital-маркетинг',
-        c3_m1: 'Рост продаж',
-        cl1_desc: 'От создания бренда до ввода 3 500 рабочих мест',
-        cl2_desc: 'Продали комплекс вилл за 6 месяцев',
-        cl3_desc: 'Провели ребрендинг крупнейшего девелопера Бали',
-        cl4_desc: 'Построили отдел маркетинга и лидогенерацию в 5 странах',
-        cl5_desc: 'Сквозная аналитика и data-driven маркетинг для ТОП-20 девелоперов России',
+        cases_label: '\u041e\u043f\u044b\u0442',
+        cases_heading: '\u041f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0451\u043d\u043d\u044b\u0439 \u043e\u043f\u044b\u0442 \u0441 \u043b\u0438\u0434\u0435\u0440\u0430\u043c\u0438\u00a0\u043e\u0442\u0440\u0430\u0441\u043b\u0438',
+        c1_badge: 'Customer Experience \u0438 IT',
+        c1_desc: '\u0423\u043f\u0440\u0430\u0432\u043b\u044f\u043b\u0438 CX-\u043f\u0440\u043e\u0435\u043a\u0442\u0430\u043c\u0438, \u0432\u043d\u0435\u0434\u0440\u044f\u043b\u0438 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f \u0434\u043b\u044f \u0440\u043e\u0441\u0442\u0430 \u043a\u043e\u043d\u0432\u0435\u0440\u0441\u0438\u0439 \u043d\u0430 \u043a\u0430\u0436\u0434\u043e\u043c \u044d\u0442\u0430\u043f\u0435 \u043f\u0443\u0442\u0438 \u043a\u043b\u0438\u0435\u043d\u0442\u0430. \u0422\u0440\u0430\u043d\u0441\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f IT-\u0438\u043d\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u044b: CRM, \u042d\u0414\u041e, \u043e\u043d\u043b\u0430\u0439\u043d-\u043f\u043e\u043a\u0443\u043f\u043a\u0430 \u043a\u0432\u0430\u0440\u0442\u0438\u0440, \u0441\u0430\u0439\u0442-\u043c\u0430\u0440\u043a\u0435\u0442\u043f\u043b\u0435\u0439\u0441, \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u043e\u0435 \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0435.',
+        c1_m1: '\u0422\u0440\u0430\u043d\u0441\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f', c1_m2: '\u0412\u043d\u0435\u0434\u0440\u0435\u043d\u0438\u0435', c1_m3: '\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430',
+        c2_badge: 'SMM \u0438 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f',
+        c2_desc: '\u0418\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0435 \u0430\u0443\u0434\u0438\u0442\u043e\u0440\u0438\u0438 \u0438 \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u044f \u043a\u043e\u043c\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u0438 \u0432 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0445 \u0441\u0435\u0442\u044f\u0445 \u0434\u043b\u044f \u043d\u043e\u0432\u043e\u0433\u043e \u043f\u043e\u0434\u0440\u0430\u0437\u0434\u0435\u043b\u0435\u043d\u0438\u044f \u042f\u043d\u0434\u0435\u043a\u0441\u0430',
+        c2_m1: '\u0421\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u044f',
+        c3_badge: 'Digital-\u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433',
+        c3_desc: '\u0423\u0434\u0432\u043e\u0438\u043b\u0438 \u043f\u0440\u043e\u0434\u0430\u0436\u0438 \u0436\u0438\u043b\u043e\u0439, \u043a\u043e\u043c\u043c\u0435\u0440\u0447\u0435\u0441\u043a\u043e\u0439 \u0438 \u0437\u0430\u0440\u0443\u0431\u0435\u0436\u043d\u043e\u0439 \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u0438 \u0437\u0430 \u0433\u043e\u0434. \u041f\u043e\u0441\u0442\u0440\u043e\u0438\u043b\u0438 \u043f\u0440\u0438\u0431\u044b\u043b\u044c\u043d\u044b\u0439 digital-\u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433',
+        c3_m1: '\u0420\u043e\u0441\u0442 \u043f\u0440\u043e\u0434\u0430\u0436',
+        cl1_desc: '\u041e\u0442 \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044f \u0431\u0440\u0435\u043d\u0434\u0430 \u0434\u043e \u0432\u0432\u043e\u0434\u0430 3 500 \u0440\u0430\u0431\u043e\u0447\u0438\u0445 \u043c\u0435\u0441\u0442',
+        cl2_desc: '\u041f\u0440\u043e\u0434\u0430\u043b\u0438 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0441 \u0432\u0438\u043b\u043b \u0437\u0430 6 \u043c\u0435\u0441\u044f\u0446\u0435\u0432',
+        cl3_desc: '\u041f\u0440\u043e\u0432\u0435\u043b\u0438 \u0440\u0435\u0431\u0440\u0435\u043d\u0434\u0438\u043d\u0433 \u043a\u0440\u0443\u043f\u043d\u0435\u0439\u0448\u0435\u0433\u043e \u0434\u0435\u0432\u0435\u043b\u043e\u043f\u0435\u0440\u0430 \u0411\u0430\u043b\u0438',
+        cl4_desc: '\u041f\u043e\u0441\u0442\u0440\u043e\u0438\u043b\u0438 \u043e\u0442\u0434\u0435\u043b \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u0430 \u0438 \u043b\u0438\u0434\u043e\u0433\u0435\u043d\u0435\u0440\u0430\u0446\u0438\u044e \u0432 5 \u0441\u0442\u0440\u0430\u043d\u0430\u0445',
+        cl5_desc: '\u0421\u043a\u0432\u043e\u0437\u043d\u0430\u044f \u0430\u043d\u0430\u043b\u0438\u0442\u0438\u043a\u0430 \u0438 data-driven \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433 \u0434\u043b\u044f \u0422\u041e\u041f-20 \u0434\u0435\u0432\u0435\u043b\u043e\u043f\u0435\u0440\u043e\u0432 \u0420\u043e\u0441\u0441\u0438\u0438',
 
-        // CTA Band
-        cta_title: 'Готовы выполнить планы продаж?',
-        cta_subtitle: 'Обсудим ваш проект и построим индивидуальную маркетинговую систему',
-        cta_btn: 'Связаться',
+        testimonial_label: '\u041e\u0442\u0437\u044b\u0432\u044b',
+        testimonial_1_text: '\u0421\u0438\u0441\u0442\u0435\u043c\u043d\u044b\u0439 \u043f\u043e\u0434\u0445\u043e\u0434 \u043a\u043e\u043c\u0430\u043d\u0434\u044b Flamelix \u0438 \u0430\u043d\u0430\u043b\u0438\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0442\u043e\u0447\u043d\u043e\u0441\u0442\u044c \u0441\u044b\u0433\u0440\u0430\u043b\u0438 \u043a\u043b\u044e\u0447\u0435\u0432\u0443\u044e \u0440\u043e\u043b\u044c \u0432 \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u0438 Flexity. \u0417\u0430 \u0442\u0440\u0438 \u0433\u043e\u0434\u0430 \u0441\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u0447\u0435\u0441\u0442\u0432\u0430 \u0438\u0445 \u043a\u043e\u043c\u0430\u043d\u0434\u0430 \u043f\u043e\u0441\u0442\u0440\u043e\u0438\u043b\u0430 \u043d\u0430\u043c \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u0443\u044e \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u0443\u044e \u0438\u043d\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0443, \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0438\u0432\u043d\u044b\u0435 \u043a\u0430\u043c\u043f\u0430\u043d\u0438\u0438 \u0438 \u0441\u043a\u0432\u043e\u0437\u043d\u0443\u044e \u0430\u043d\u0430\u043b\u0438\u0442\u0438\u043a\u0443.',
+        testimonial_1_name: '\u0421\u0430\u0440\u043f\u0435\u0440 \u0410\u043b\u0442\u0443\u043d\u0439\u0443\u0432\u0430',
+        testimonial_1_role: '\u0413\u0435\u043d\u0435\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440, Flexity (\u042d\u041d\u041a\u0410)',
 
-        // Team
-        team_label: 'КОМАНДА',
-        team_title: 'Партнёр, которого вы<br>искали',
-        team_desc: 'Мы объединяем богатый опыт, чтобы маркетинг работал. Партнёрство с девелоперами для создания решений, отвечающих самым высоким стандартам.',
-        t1_name: 'Родион Ангаев', t1_role: 'Growth-стратегии и data-driven маркетинг',
-        t1_desc: 'Выстраивает маркетинговые системы и управляет KPI лидогенерации. Эксперт в партнёрском маркетинге.',
-        t2_name: 'Илья Волгин', t2_role: 'Customer Experience и цифровая трансформация',
-        t2_desc: 'CX-проекты, сайты-маркетплейсы, мобильные приложения, онлайн-продажи недвижимости. Директор по цифровой трансформации MR Group.',
-        t3_name: 'Александр Воробьёв', t3_role: 'Брендинг, сайты и презентации',
-        t3_desc: 'Более 30 проектов в недвижимости. Создаёт продающие материалы: сайты, презентации и рекламные креативы.',
-        t4_name: 'Андрей Соколов', t4_role: 'Аналитика и автоматизация',
-        t4_desc: 'Системная и сквозная аналитика, автоматизация маркетинга и продаж. Строит отчётность от рекламных вложений до закрытых сделок в CRM.',
+        cta_title: '\u0413\u043e\u0442\u043e\u0432\u044b \u0432\u044b\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043f\u043b\u0430\u043d\u044b \u043f\u0440\u043e\u0434\u0430\u0436?',
+        cta_subtitle: '\u041e\u0431\u0441\u0443\u0434\u0438\u043c \u0432\u0430\u0448 \u043f\u0440\u043e\u0435\u043a\u0442 \u0438 \u043f\u043e\u0441\u0442\u0440\u043e\u0438\u043c \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u0443\u044e \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u0443\u044e \u0441\u0438\u0441\u0442\u0435\u043c\u0443',
+        cta_btn: '\u0421\u0432\u044f\u0437\u0430\u0442\u044c\u0441\u044f',
 
-        // FAQ
-        faq_title: 'Часто задаваемые вопросы',
-        faq1_q: 'Почему Flamelix?',
-        faq1_a: 'Flamelix специализируется на достижении измеримых результатов для девелоперов недвижимости. Мы предоставляем полную маркетинговую команду — от исследований и стратегии до реализации и аналитики — устраняя необходимость координировать несколько агентств. Наш глубокий отраслевой опыт в 30+ проектах гарантирует решения, адаптированные под ваш рынок.',
-        faq2_q: 'Чем Flamelix отличается от других агентств?',
-        faq2_a: 'Мы не традиционное маркетинговое агентство. Мы формируем выделенную команду, встроенную в ваши процессы — покрывая исследования, CX, стратегию, лидогенерацию, продающие материалы, CRM и сквозную аналитику. Мы фокусируемся на полном жизненном цикле, привязанном к вашим планам продаж.',
-        faq3_q: 'С какими отраслями вы работаете?',
-        faq3_a: 'Мы специализируемся на девелопменте недвижимости — жилой, коммерческой и международной. Наши клиенты включают ведущих девелоперов, таких как MR Group, Knight Frank и ENKA, а также proptech-компании и международные платформы в 5 странах.',
-        faq4_q: 'Нужна ли нам собственная маркетинговая команда для работы с вами?',
-        faq4_a: 'Совсем нет. Мы выполняем функцию вашего полноценного маркетингового отдела — от стратегии до реализации. Если у вас уже есть команда, мы бесшовно интегрируемся, заполняя пробелы и усиливая возможности.',
-        faq5_q: 'Как вы измеряете успех?',
-        faq5_a: 'Всё привязано к вашим бизнес-целям. Мы настраиваем сквозную аналитику, отслеживая весь путь — от рекламных вложений до лидов, стадий воронки и закрытых сделок в CRM. Вы видите, как каждый рубль маркетингового бюджета превращается в продажи.',
+        team_label: '\u041a\u043e\u043c\u0430\u043d\u0434\u0430',
+        team_heading: '\u041f\u0430\u0440\u0442\u043d\u0451\u0440, \u043a\u043e\u0442\u043e\u0440\u043e\u0433\u043e \u0432\u044b\u00a0\u0438\u0441\u043a\u0430\u043b\u0438',
+        t1_name: '\u0420\u043e\u0434\u0438\u043e\u043d \u0410\u043d\u0433\u0430\u0435\u0432', t1_role: 'Growth-\u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u0438 \u0438 data-driven \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433',
+        t1_desc: '\u0412\u044b\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0435\u0442 \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u044b\u0435 \u0441\u0438\u0441\u0442\u0435\u043c\u044b \u0438 \u0443\u043f\u0440\u0430\u0432\u043b\u044f\u0435\u0442 KPI \u043b\u0438\u0434\u043e\u0433\u0435\u043d\u0435\u0440\u0430\u0446\u0438\u0438. \u042d\u043a\u0441\u043f\u0435\u0440\u0442 \u0432 \u043f\u0430\u0440\u0442\u043d\u0451\u0440\u0441\u043a\u043e\u043c \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u0435.',
+        t2_name: '\u0418\u043b\u044c\u044f \u0412\u043e\u043b\u0433\u0438\u043d', t2_role: 'Customer Experience \u0438 \u0446\u0438\u0444\u0440\u043e\u0432\u0430\u044f \u0442\u0440\u0430\u043d\u0441\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f',
+        t2_desc: 'CX-\u043f\u0440\u043e\u0435\u043a\u0442\u044b, \u0441\u0430\u0439\u0442\u044b-\u043c\u0430\u0440\u043a\u0435\u0442\u043f\u043b\u0435\u0439\u0441\u044b, \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f, \u043e\u043d\u043b\u0430\u0439\u043d-\u043f\u0440\u043e\u0434\u0430\u0436\u0438 \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u0438. \u0414\u0438\u0440\u0435\u043a\u0442\u043e\u0440 \u043f\u043e \u0446\u0438\u0444\u0440\u043e\u0432\u043e\u0439 \u0442\u0440\u0430\u043d\u0441\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u0438 MR Group.',
+        t3_name: '\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440 \u0412\u043e\u0440\u043e\u0431\u044c\u0451\u0432', t3_role: '\u0411\u0440\u0435\u043d\u0434\u0438\u043d\u0433, \u0441\u0430\u0439\u0442\u044b \u0438 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u0438',
+        t3_desc: '\u0411\u043e\u043b\u0435\u0435 30 \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432 \u0432 \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u0438. \u0421\u043e\u0437\u0434\u0430\u0451\u0442 \u043f\u0440\u043e\u0434\u0430\u044e\u0449\u0438\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b: \u0441\u0430\u0439\u0442\u044b, \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u0438 \u0438 \u0440\u0435\u043a\u043b\u0430\u043c\u043d\u044b\u0435 \u043a\u0440\u0435\u0430\u0442\u0438\u0432\u044b.',
+        t4_name: '\u0410\u043d\u0434\u0440\u0435\u0439 \u0421\u043e\u043a\u043e\u043b\u043e\u0432', t4_role: '\u0410\u043d\u0430\u043b\u0438\u0442\u0438\u043a\u0430 \u0438 \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u044f',
+        t4_desc: '\u0421\u0438\u0441\u0442\u0435\u043c\u043d\u0430\u044f \u0438 \u0441\u043a\u0432\u043e\u0437\u043d\u0430\u044f \u0430\u043d\u0430\u043b\u0438\u0442\u0438\u043a\u0430, \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0437\u0430\u0446\u0438\u044f \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u0430 \u0438 \u043f\u0440\u043e\u0434\u0430\u0436. \u0421\u0442\u0440\u043e\u0438\u0442 \u043e\u0442\u0447\u0451\u0442\u043d\u043e\u0441\u0442\u044c \u043e\u0442 \u0440\u0435\u043a\u043b\u0430\u043c\u043d\u044b\u0445 \u0432\u043b\u043e\u0436\u0435\u043d\u0438\u0439 \u0434\u043e \u0437\u0430\u043a\u0440\u044b\u0442\u044b\u0445 \u0441\u0434\u0435\u043b\u043e\u043a \u0432 CRM.',
 
-        // Contact
-        contact_label: 'КОНТАКТЫ',
-        contact_title: 'Давайте построим вашу<br>маркетинговую систему',
-        contact_desc: 'Расскажите о вашем проекте, и мы предложим оптимальное решение для достижения планов продаж',
-        form_name: 'Имя',
-        form_name_ph: 'Ваше имя',
-        form_project: 'О проекте',
-        form_project_ph: 'Расскажите о вашем проекте и целях...',
-        form_submit: 'Отправить заявку',
-        form_sent: 'Отправлено',
+        faq_title: '\u0427\u0430\u0441\u0442\u043e \u0437\u0430\u0434\u0430\u0432\u0430\u0435\u043c\u044b\u0435 \u0432\u043e\u043f\u0440\u043e\u0441\u044b',
+        faq1_q: '\u041f\u043e\u0447\u0435\u043c\u0443 Flamelix?',
+        faq1_a: 'Flamelix \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u0443\u0435\u0442\u0441\u044f \u043d\u0430 \u0434\u043e\u0441\u0442\u0438\u0436\u0435\u043d\u0438\u0438 \u0438\u0437\u043c\u0435\u0440\u0438\u043c\u044b\u0445 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u043e\u0432 \u0434\u043b\u044f \u0434\u0435\u0432\u0435\u043b\u043e\u043f\u0435\u0440\u043e\u0432 \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u0438. \u041c\u044b \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u043c \u043f\u043e\u043b\u043d\u0443\u044e \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u0443\u044e \u043a\u043e\u043c\u0430\u043d\u0434\u0443 \u2014 \u043e\u0442 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0439 \u0434\u043e \u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0438. \u041d\u0430\u0448 \u043e\u043f\u044b\u0442 \u0432 30+ \u043f\u0440\u043e\u0435\u043a\u0442\u0430\u0445 \u0433\u0430\u0440\u0430\u043d\u0442\u0438\u0440\u0443\u0435\u0442 \u0440\u0435\u0448\u0435\u043d\u0438\u044f \u043f\u043e\u0434 \u0432\u0430\u0448 \u0440\u044b\u043d\u043e\u043a.',
+        faq2_q: '\u0427\u0435\u043c Flamelix \u043e\u0442\u043b\u0438\u0447\u0430\u0435\u0442\u0441\u044f \u043e\u0442 \u0434\u0440\u0443\u0433\u0438\u0445 \u0430\u0433\u0435\u043d\u0442\u0441\u0442\u0432?',
+        faq2_a: '\u041c\u044b \u043d\u0435 \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u043e\u043d\u043d\u043e\u0435 \u0430\u0433\u0435\u043d\u0442\u0441\u0442\u0432\u043e. \u041c\u044b \u0444\u043e\u0440\u043c\u0438\u0440\u0443\u0435\u043c \u0432\u044b\u0434\u0435\u043b\u0435\u043d\u043d\u0443\u044e \u043a\u043e\u043c\u0430\u043d\u0434\u0443 \u0432 \u0432\u0430\u0448\u0438\u0445 \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u0430\u0445 \u2014 \u043e\u0442 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0439 \u0434\u043e \u0441\u043a\u0432\u043e\u0437\u043d\u043e\u0439 \u0430\u043d\u0430\u043b\u0438\u0442\u0438\u043a\u0438. \u0424\u043e\u043a\u0443\u0441 \u043d\u0430 \u043f\u043b\u0430\u043d\u0430\u0445 \u043f\u0440\u043e\u0434\u0430\u0436, \u0430 \u043d\u0435 \u043d\u0430 \u0432\u0430\u043d\u0438\u0442\u0438-\u043c\u0435\u0442\u0440\u0438\u043a\u0430\u0445.',
+        faq3_q: '\u0421 \u043a\u0430\u043a\u0438\u043c\u0438 \u043e\u0442\u0440\u0430\u0441\u043b\u044f\u043c\u0438 \u0432\u044b \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442\u0435?',
+        faq3_a: '\u0421\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f \u2014 \u0434\u0435\u0432\u0435\u043b\u043e\u043f\u043c\u0435\u043d\u0442 \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u0438. \u041a\u043b\u0438\u0435\u043d\u0442\u044b: MR Group, Knight Frank, ENKA, proptech-\u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0438 \u0438 \u043c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u044b\u0435 \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u044b \u0432 5 \u0441\u0442\u0440\u0430\u043d\u0430\u0445.',
+        faq4_q: '\u041d\u0443\u0436\u043d\u0430 \u043b\u0438 \u043d\u0430\u043c \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u0430\u044f \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u0430\u044f \u043a\u043e\u043c\u0430\u043d\u0434\u0430?',
+        faq4_a: '\u0421\u043e\u0432\u0441\u0435\u043c \u043d\u0435\u0442. \u041c\u044b \u0432\u044b\u043f\u043e\u043b\u043d\u044f\u0435\u043c \u0444\u0443\u043d\u043a\u0446\u0438\u044e \u0432\u0430\u0448\u0435\u0433\u043e \u043f\u043e\u043b\u043d\u043e\u0446\u0435\u043d\u043d\u043e\u0433\u043e \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u043e\u0433\u043e \u043e\u0442\u0434\u0435\u043b\u0430. \u0415\u0441\u043b\u0438 \u0443 \u0432\u0430\u0441 \u0443\u0436\u0435 \u0435\u0441\u0442\u044c \u043a\u043e\u043c\u0430\u043d\u0434\u0430, \u043c\u044b \u0431\u0435\u0441\u0448\u043e\u0432\u043d\u043e \u0438\u043d\u0442\u0435\u0433\u0440\u0438\u0440\u0443\u0435\u043c\u0441\u044f.',
+        faq5_q: '\u041a\u0430\u043a \u0432\u044b \u0438\u0437\u043c\u0435\u0440\u044f\u0435\u0442\u0435 \u0443\u0441\u043f\u0435\u0445?',
+        faq5_a: '\u0412\u0441\u0451 \u043f\u0440\u0438\u0432\u044f\u0437\u0430\u043d\u043e \u043a \u0431\u0438\u0437\u043d\u0435\u0441-\u0446\u0435\u043b\u044f\u043c. \u0421\u043a\u0432\u043e\u0437\u043d\u0430\u044f \u0430\u043d\u0430\u043b\u0438\u0442\u0438\u043a\u0430 \u043e\u0442\u0441\u043b\u0435\u0436\u0438\u0432\u0430\u0435\u0442 \u043f\u0443\u0442\u044c \u043e\u0442 \u0440\u0435\u043a\u043b\u0430\u043c\u044b \u0434\u043e \u0441\u0434\u0435\u043b\u043e\u043a \u0432 CRM. \u0412\u044b \u0432\u0438\u0434\u0438\u0442\u0435, \u043a\u0430\u043a \u043a\u0430\u0436\u0434\u044b\u0439 \u0440\u0443\u0431\u043b\u044c \u043f\u0440\u0435\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044f \u0432 \u043f\u0440\u043e\u0434\u0430\u0436\u0438.',
 
-        // Footer
-        footer_desc: 'Маркетинг и IT для девелоперов недвижимости',
-        footer_copy: '\u00a9 2025 Flamelix. Все права защищены.'
+        contact_label: '\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b',
+        contact_heading: '\u0414\u0430\u0432\u0430\u0439\u0442\u0435 \u043f\u043e\u0441\u0442\u0440\u043e\u0438\u043c \u0432\u0430\u0448\u0443 \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u0443\u044e\u00a0\u0441\u0438\u0441\u0442\u0435\u043c\u0443',
+        contact_desc: '\u0420\u0430\u0441\u0441\u043a\u0430\u0436\u0438\u0442\u0435 \u043e \u0432\u0430\u0448\u0435\u043c \u043f\u0440\u043e\u0435\u043a\u0442\u0435, \u0438 \u043c\u044b \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0438\u043c \u043e\u043f\u0442\u0438\u043c\u0430\u043b\u044c\u043d\u043e\u0435 \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u0434\u043b\u044f \u0434\u043e\u0441\u0442\u0438\u0436\u0435\u043d\u0438\u044f \u043f\u043b\u0430\u043d\u043e\u0432 \u043f\u0440\u043e\u0434\u0430\u0436',
+        form_name: '\u0418\u043c\u044f',
+        form_name_ph: '\u0412\u0430\u0448\u0435 \u0438\u043c\u044f',
+        form_project: '\u041e \u043f\u0440\u043e\u0435\u043a\u0442\u0435',
+        form_project_ph: '\u0420\u0430\u0441\u0441\u043a\u0430\u0436\u0438\u0442\u0435 \u043e \u0432\u0430\u0448\u0435\u043c \u043f\u0440\u043e\u0435\u043a\u0442\u0435 \u0438 \u0446\u0435\u043b\u044f\u0445...',
+        form_submit: '\u041e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c \u0437\u0430\u044f\u0432\u043a\u0443',
+        form_sent: '\u041e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043e',
+
+        footer_desc: '\u041c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433 \u0438 IT \u0434\u043b\u044f \u0434\u0435\u0432\u0435\u043b\u043e\u043f\u0435\u0440\u043e\u0432 \u043d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u0438',
+        footer_copy: '\u00a9 2026 Flamelix. \u0412\u0441\u0435 \u043f\u0440\u0430\u0432\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043d\u044b.'
     }
 };
 
@@ -267,58 +240,41 @@ function setLanguage(lang) {
     const t = translations[lang];
     if (!t) return;
 
-    // Update text content
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (t[key] !== undefined) {
-            el.textContent = t[key];
-        }
+        if (t[key] !== undefined) el.textContent = t[key];
     });
 
-    // Update HTML content (for elements with <br> and <span>)
     document.querySelectorAll('[data-i18n-html]').forEach(el => {
         const key = el.getAttribute('data-i18n-html');
-        if (t[key] !== undefined) {
-            el.innerHTML = t[key];
-        }
+        if (t[key] !== undefined) el.innerHTML = t[key];
     });
 
-    // Update placeholders
     document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
         const key = el.getAttribute('data-i18n-placeholder');
-        if (t[key] !== undefined) {
-            el.placeholder = t[key];
-        }
+        if (t[key] !== undefined) el.placeholder = t[key];
     });
 
-    // Update html lang attribute & page title
     document.documentElement.lang = lang;
-    if (t.page_title) {
-        document.title = t.page_title;
-    }
+    if (t.page_title) document.title = t.page_title;
 
-    // Update active button
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.lang === lang);
     });
 
-    // Save preference
     try { localStorage.setItem('flamelix-lang', lang); } catch(e) {}
 }
 
-// ====== Throttle utility ======
+// ====== Utilities ======
 function throttle(fn, delay) {
-    let lastCall = 0;
+    let last = 0;
     return function (...args) {
         const now = Date.now();
-        if (now - lastCall >= delay) {
-            lastCall = now;
-            fn.apply(this, args);
-        }
+        if (now - last >= delay) { last = now; fn.apply(this, args); }
     };
 }
 
-// ====== Initialize ======
+// ====== Init ======
 document.addEventListener('DOMContentLoaded', () => {
     initLanguageSwitcher();
     initNavigation();
@@ -328,201 +284,130 @@ document.addEventListener('DOMContentLoaded', () => {
     initFAQ();
 });
 
-// ====== Language Switcher ======
 function initLanguageSwitcher() {
     const switcher = document.getElementById('langSwitcher');
     if (!switcher) return;
 
-    // Check saved preference
-    let savedLang = null;
-    try { savedLang = localStorage.getItem('flamelix-lang'); } catch(e) {}
-
-    // Check browser language
-    if (!savedLang) {
-        const browserLang = navigator.language || navigator.userLanguage || '';
-        savedLang = browserLang.startsWith('ru') ? 'ru' : 'en';
+    let saved = null;
+    try { saved = localStorage.getItem('flamelix-lang'); } catch(e) {}
+    if (!saved) {
+        const bl = navigator.language || navigator.userLanguage || '';
+        saved = bl.startsWith('ru') ? 'ru' : 'en';
     }
+    setLanguage(saved);
 
-    // Set initial language
-    setLanguage(savedLang);
-
-    // Bind clicks
     switcher.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            setLanguage(btn.dataset.lang);
-        });
+        btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
     });
 }
 
-// ====== Navigation ======
 function initNavigation() {
     const navbar = document.getElementById('navbar');
-    const menuToggle = document.getElementById('menuToggle');
-    const navMenu = document.getElementById('navMenu');
-    const navOverlay = document.getElementById('navOverlay');
+    const toggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('navMenu');
+    const overlay = document.getElementById('navOverlay');
 
-    // Throttled scroll handler
     window.addEventListener('scroll', throttle(() => {
-        if (window.pageYOffset > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
+        navbar.classList.toggle('scrolled', window.pageYOffset > 50);
     }, 100));
 
-    function closeMenu() {
-        navMenu.classList.remove('active');
-        menuToggle.classList.remove('active');
-        menuToggle.setAttribute('aria-expanded', 'false');
-        if (navOverlay) navOverlay.classList.remove('active');
+    function close() {
+        menu.classList.remove('active');
+        toggle.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+        if (overlay) overlay.classList.remove('active');
         document.body.style.overflow = '';
     }
 
-    function openMenu() {
-        navMenu.classList.add('active');
-        menuToggle.classList.add('active');
-        menuToggle.setAttribute('aria-expanded', 'true');
-        if (navOverlay) navOverlay.classList.add('active');
+    function open() {
+        menu.classList.add('active');
+        toggle.classList.add('active');
+        toggle.setAttribute('aria-expanded', 'true');
+        if (overlay) overlay.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
 
-    if (menuToggle && navMenu) {
-        menuToggle.addEventListener('click', () => {
-            const isOpen = navMenu.classList.contains('active');
-            if (isOpen) {
-                closeMenu();
-            } else {
-                openMenu();
-            }
-        });
-
-        navMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', closeMenu);
-        });
+    if (toggle && menu) {
+        toggle.addEventListener('click', () => menu.classList.contains('active') ? close() : open());
+        menu.querySelectorAll('a').forEach(l => l.addEventListener('click', close));
     }
 
-    // Close on overlay click
-    if (navOverlay) {
-        navOverlay.addEventListener('click', closeMenu);
-    }
+    if (overlay) overlay.addEventListener('click', close);
 
-    // Close on Escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && navMenu && navMenu.classList.contains('active')) {
-            closeMenu();
-        }
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && menu?.classList.contains('active')) close();
     });
 
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function(e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+            const t = document.querySelector(this.getAttribute('href'));
+            if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
     });
 }
 
-// ====== Scroll Animations ======
 function initScrollAnimations() {
-    const aosElements = document.querySelectorAll('[data-aos]');
-    if (!aosElements.length) return;
+    const els = document.querySelectorAll('[data-aos]');
+    if (!els.length) return;
 
-    // Safety fallback: force all elements visible after 4 seconds
-    setTimeout(() => {
-        aosElements.forEach(el => el.classList.add('visible'));
-    }, 4000);
+    setTimeout(() => els.forEach(el => el.classList.add('visible')), 4000);
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
+    const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
         });
-    }, {
-        threshold: 0.05,
-        rootMargin: '0px 0px -40px 0px'
-    });
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
 
-    aosElements.forEach((el) => {
-        observer.observe(el);
-    });
+    els.forEach(el => obs.observe(el));
 
-    // Immediately show elements that are already in viewport on load
     requestAnimationFrame(() => {
-        aosElements.forEach(el => {
-            const rect = el.getBoundingClientRect();
-            if (rect.top < window.innerHeight && rect.bottom > 0) {
-                el.classList.add('visible');
-            }
+        els.forEach(el => {
+            const r = el.getBoundingClientRect();
+            if (r.top < window.innerHeight && r.bottom > 0) el.classList.add('visible');
         });
     });
 }
 
-// ====== Metric Counters ======
 function initMetricCounters() {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateMetrics();
-                observer.unobserve(entry.target);
-            }
-        });
+    const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { animateMetrics(); obs.unobserve(e.target); } });
     }, { threshold: 0.3 });
 
-    const metricsSection = document.querySelector('.hero-metrics');
-    if (metricsSection) {
-        observer.observe(metricsSection);
-    }
+    const s = document.querySelector('.hero-stats');
+    if (s) obs.observe(s);
 }
 
 function animateMetrics() {
-    const metrics = document.querySelectorAll('.metric-value');
-    metrics.forEach(metric => {
-        const target = parseInt(metric.dataset.target);
-        const suffix = metric.dataset.suffix || '';
-        const duration = 2000;
+    document.querySelectorAll('.stat-value').forEach(m => {
+        const target = parseInt(m.dataset.target);
+        const suffix = m.dataset.suffix || '';
+        const dur = 2000;
         const start = performance.now();
 
-        function update(currentTime) {
-            const elapsed = currentTime - start;
-            const progress = Math.min(elapsed / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            const current = Math.round(eased * target);
-
-            metric.textContent = current + (progress >= 1 ? suffix : '');
-
-            if (progress < 1) {
-                requestAnimationFrame(update);
-            }
+        function tick(now) {
+            const p = Math.min((now - start) / dur, 1);
+            const eased = 1 - Math.pow(1 - p, 3);
+            m.textContent = Math.round(eased * target) + (p >= 1 ? suffix : '');
+            if (p < 1) requestAnimationFrame(tick);
         }
 
-        requestAnimationFrame(update);
+        requestAnimationFrame(tick);
     });
 }
 
-// ====== FAQ Accordion ======
 function initFAQ() {
-    const faqItems = document.querySelectorAll('.faq-item');
-    faqItems.forEach(item => {
-        const btn = item.querySelector('.faq-question');
+    document.querySelectorAll('.faq-item').forEach(item => {
+        const btn = item.querySelector('.faq-q');
         if (!btn) return;
-
         btn.addEventListener('click', () => {
-            const isActive = item.classList.contains('active');
-
-            // Close all
-            faqItems.forEach(other => {
-                other.classList.remove('active');
-                const otherBtn = other.querySelector('.faq-question');
-                if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+            const active = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(o => {
+                o.classList.remove('active');
+                const ob = o.querySelector('.faq-q');
+                if (ob) ob.setAttribute('aria-expanded', 'false');
             });
-
-            // Toggle current
-            if (!isActive) {
+            if (!active) {
                 item.classList.add('active');
                 btn.setAttribute('aria-expanded', 'true');
             }
@@ -530,33 +415,29 @@ function initFAQ() {
     });
 }
 
-// ====== Contact Form ======
 function initContactForm() {
     const form = document.querySelector('.contact-form');
-    if (form) {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
+    if (!form) return;
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        const btn = form.querySelector('button[type="submit"]');
+        const orig = btn.innerHTML;
+        const sent = translations[currentLang]?.form_sent || 'Sent';
 
-            const btn = form.querySelector('button[type="submit"]');
-            const originalHTML = btn.innerHTML;
-            const sentText = translations[currentLang]?.form_sent || 'Sent';
+        btn.innerHTML = `<span>${sent}</span>`;
+        btn.style.background = '#22c55e';
+        btn.disabled = true;
 
-            btn.innerHTML = `<span>${sentText}</span>`;
-            btn.style.background = '#22c55e';
-            btn.disabled = true;
-
-            setTimeout(() => {
-                btn.innerHTML = originalHTML;
-                // Re-apply current language to the button text
-                const submitSpan = btn.querySelector('[data-i18n]');
-                if (submitSpan) {
-                    const key = submitSpan.getAttribute('data-i18n');
-                    submitSpan.textContent = translations[currentLang]?.[key] || submitSpan.textContent;
-                }
-                btn.style.background = '';
-                btn.disabled = false;
-                form.reset();
-            }, 3000);
-        });
-    }
+        setTimeout(() => {
+            btn.innerHTML = orig;
+            const sp = btn.querySelector('[data-i18n]');
+            if (sp) {
+                const k = sp.getAttribute('data-i18n');
+                sp.textContent = translations[currentLang]?.[k] || sp.textContent;
+            }
+            btn.style.background = '';
+            btn.disabled = false;
+            form.reset();
+        }, 3000);
+    });
 }
