@@ -409,11 +409,35 @@ body {
    CLIENTS STRIP (infinite marquee)
    ======================================== */
 .clients-strip {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.clients-inner {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.clients-label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.marquee-wrap {
+    flex: 1;
     overflow: hidden;
-    mask-image: linear-gradient(90deg, transparent, black 5%, black 95%, transparent);
-    -webkit-mask-image: linear-gradient(90deg, transparent, black 5%, black 95%, transparent);
+    mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
 }
 
 .marquee-track {
@@ -425,9 +449,9 @@ body {
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    gap: 3.5rem;
-    padding-right: 3.5rem;
-    animation: marquee 40s linear infinite;
+    gap: 1.5rem;
+    padding-right: 1.5rem;
+    animation: marquee 30s linear infinite;
     will-change: transform;
 }
 
@@ -435,8 +459,15 @@ body {
     font-size: 0.85rem;
     font-weight: 500;
     color: var(--text-muted);
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     white-space: nowrap;
+    line-height: 1;
+}
+
+.cl-dot {
+    color: var(--text-muted);
+    opacity: 0.4;
+    font-size: 0.9rem;
     line-height: 1;
 }
 
@@ -1362,7 +1393,9 @@ body {
     .cta-box { padding: 3.5rem 2rem; }
     .cta-box h2 { font-size: 1.7rem; }
 
-    .cl-name { font-size: 0.82rem; }
+    .clients-inner { padding: 0 1.25rem; gap: 1.25rem; }
+    .clients-label { font-size: 0.6rem; }
+    .cl-name { font-size: 0.78rem; }
 }
 
 @media (max-width: 480px) {
