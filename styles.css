@@ -386,9 +386,10 @@ body {
 
 .stat-value {
     display: block;
-    font-size: 3.2rem;
-    font-weight: 800;
-    letter-spacing: -2px;
+    font-family: var(--serif);
+    font-size: 2.8rem;
+    font-weight: 400;
+    letter-spacing: -1px;
     line-height: 1;
     color: var(--text);
     font-variant-numeric: tabular-nums;
@@ -396,77 +397,40 @@ body {
 
 .stat-label {
     display: block;
-    font-size: 0.76rem;
+    font-size: 0.72rem;
     color: var(--text-muted);
     margin-top: 0.6rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 /* ========================================
    CLIENTS STRIP
    ======================================== */
 .clients-strip {
-    padding: 2rem 0;
+    padding: 3rem 0;
     border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    overflow: hidden;
 }
 
-.clients-inner {
+.clients-grid {
     display: flex;
-    align-items: center;
-    gap: 2.5rem;
-}
-
-.clients-label {
-    font-size: 0.72rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--text-muted);
-    white-space: nowrap;
-    flex-shrink: 0;
-    padding-left: 2rem;
-}
-
-.marquee-track {
-    flex: 1;
-    overflow: hidden;
-    mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
-    -webkit-mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
-}
-
-.marquee-scroll {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    width: max-content;
-    animation: marquee 28s linear infinite;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem 3rem;
 }
 
 .cl-name {
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--text-secondary);
-    letter-spacing: -0.2px;
-    opacity: 0.6;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    letter-spacing: 0;
     white-space: nowrap;
+    transition: color 0.25s;
 }
 
-.cl-dot {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: var(--text-muted);
-    opacity: 0.4;
-    flex-shrink: 0;
-}
-
-@keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+.cl-name:hover {
+    color: var(--text-secondary);
 }
 
 /* ========================================
@@ -1411,9 +1375,8 @@ body {
     .cta-box { padding: 3.5rem 2rem; }
     .cta-box h2 { font-size: 1.7rem; }
 
-    .clients-inner { gap: 1.5rem; }
-    .clients-label { padding-left: 1.25rem; }
-    .cl-name { font-size: 0.85rem; }
+    .clients-grid { gap: 1.25rem 2rem; }
+    .cl-name { font-size: 0.82rem; }
 }
 
 @media (max-width: 480px) {
